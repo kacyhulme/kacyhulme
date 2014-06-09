@@ -3,10 +3,10 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-// $(document).ready(function(){
-// 	$("#img").on("mouseenter", function() {
-// 		$(this).addClass('highlight');
-// 		}).on("mouseleave", function() {
-// 		$(this).removeClass('highlight');
-// 	});
-// });
+$(document).ready(function(){
+	$("div.thumbnail").on("mouseenter", function() {
+		$(this).addClass('highlight');
+		}).on("mouseleave", function() {
+		$(this).removeClass('highlight');
+	});
+});
