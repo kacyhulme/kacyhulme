@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.row.top {
+	margin-top: 10px;
+}
+
 body {
   background-image: asset_url('aquapattern.png');
 }
 
-#body {
+.container.body {
 	margin-top: 20px;
 }	
 
@@ -31,7 +35,7 @@ body {
 	height: 170px;
 }
 
-#longerthumbnail {
+.thumbnail.bottom {
 	height: 410px;
 }
 

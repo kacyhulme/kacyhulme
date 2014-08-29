@@ -1,71 +1,72 @@
 <div class="container">
-<!-- SnapWidget -->
-	<div class="row" style="margin-top: 10px">
-		<div class="col-md-12">
-		<iframe src="http://snapwidget.com/sc/?u=c2NhcmxldHNheHxpbnwxNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=5614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:solid orange; overflow:hidden; width:1110px; height:150px"></iframe>
-		</div>
-	</div>
+  <!-- SnapWidget -->
+  <div class="row top">
+    <div class="col-md-12">
+      <iframe src="http://snapwidget.com/sc/?u=c2NhcmxldHNheHxpbnwxNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=5614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:solid orange; overflow:hidden; width:1110px; height:150px"></iframe>
+    </div>
+  </div>
 </div>
 
-<div class="container" id="body">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="thumbnail">
-					<h1>Kacy Hulme</h1>
-					<p><%= mail_to "kacyhulme@gmail.com", "email" %></p>
-					<p><%= link_to "resume", "https://docs.google.com/document/d/1C7aCbsQ_vBYhrEKjxe0NzdFFtUGUYudh7Ot9yDrygcM/edit?usp=sharing" %></p>
-					<p> 512.638.5448</p>
-				</div>	
-		<!-- embedded row/column -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="thumbnail" id="longerthumbnail">
-							<h2>Apps</h2>
-								<button class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "Under The Plate", "http://serene-wildwood-9062.herokuapp.com" %></button>
-								<button class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "That on Which You Focus", "http://arcane-garden-7729.herokuapp.com" %></button>
-								<button class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "Project Management", "http://secure-sierra-2365.herokuapp.com" %></button>
-						</div>
-					</div>
-				</div> <!-- embedded row/column end -->
-			</div> <!-- first column end -->
-			
-			<div class="col-md-3">
-				<div class="thumbnail">
-					<h2>Skills</h2>
-					<em>Ruby on Rails, Git, Github, Bootstrap, Heroku, HTML, CSS, JavaScript, jQuery, PostgreSQL, SQLite, MySQL, Capybara, RSpec.</em>
-				</div>
+<div class="container body">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+	<h1>Kacy Hulme</h1>
+	<p><%= mail_to "kacyhulme@gmail.com", "email" %></p>
+	<p><%= link_to "resume", "https://docs.google.com/document/d/1C7aCbsQ_vBYhrEKjxe0NzdFFtUGUYudh7Ot9yDrygcM/edit?usp=sharing" %></p>
+	<p> 512.638.5448</p>
+      </div>
+      <!-- embedded row/column -->
+      <div class="row">
+	<div class="col-md-12">
+	  <div class="thumbnail bottom">
+	    <h2>Apps</h2>
+	    <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "Under The Plate", "http://serene-wildwood-9062.herokuapp.com" %></p>
+	    <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "That on Which You Focus", "http://arcane-garden-7729.herokuapp.com" %></p>
+	    <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "Project Management", "http://secure-sierra-2365.herokuapp.com" %></p>
+	    <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "My First Ember App", "http://protected-atoll-4934.herokuapp.com" %></p>
+	  </div>
+	</div>
+      </div> <!-- embedded row/column end -->
+    </div> <!-- first column end -->
 
-				<!-- embedded row/column -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="thumbnail" id="longerthumbnail">
-							<h2>Links</h2>
-							<p><%= link_to "GitHub", "https://github.com/kacyhulme" %></p>
-							<p><%= link_to "Twitter", "https://twitter.com/kacyhulme" %></p> 
-							<p><%= link_to "Angel List", "https://angel.co/kacyhulme" %></p> 
-							<p><%= link_to "Linked In", "https://www.linkedin.com/in/kacyhulme" %></p>
-						</div>
-					</div>
-				</div> <!-- embedded row/column end -->
-			</div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+	<h2>Skills</h2>
+	<em>Ruby on Rails, Git, Github, Bootstrap, Heroku, HTML, CSS, jQuery, PostgreSQL, SQLite, MySQL, Capybara, RSpec.</em>
+      </div>
 
-			<div class="col-md-3">
-				<div class="thumbnail">
-					<p class="img"><%= image_tag("infiniti.jpg") %></p>
-				</div>
+      <!-- embedded row/column -->
+      <div class="row">
+	<div class="col-md-12">
+	  <div class="thumbnail bottom">
+	    <h2>Links</h2>
+	    <p><%= link_to "GitHub", "https://github.com/kacyhulme" %></p>
+	    <p><%= link_to "Twitter", "https://twitter.com/kacyhulme" %></p>
+	    <p><%= link_to "Angel List", "https://angel.co/kacyhulme" %></p>
+	    <p><%= link_to "Linked In", "https://www.linkedin.com/in/kacyhulme" %></p>
+	  </div>
+	</div>
+      </div> <!-- embedded row/column end -->
+    </div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="thumbnail" id="longerthumbnail">
-							<p class="img"><%= image_tag("kacypic3.jpg") %></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-md-3">
-				<a class="twitter-timeline" href="https://twitter.com/kacyhulme" data-widget-id="474617050862612480">Tweets by @kacyhulme</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
-		</div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+	<p class="img"><%= image_tag("infiniti.jpg") %></p>
+      </div>
+
+      <div class="row">
+	<div class="col-md-12">
+	  <div class="thumbnail bottom">
+	    <p class="img"><%= image_tag("kacypic3.jpg") %></p>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <a class="twitter-timeline" href="https://twitter.com/kacyhulme" data-widget-id="474617050862612480">Tweets by @kacyhulme</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
 </div>
