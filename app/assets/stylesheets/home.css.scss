@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .row.top {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 body {
@@ -11,35 +11,21 @@ body {
 }
 
 .container.body {
-	margin-top: 20px;
-}	
-
-#img {
-	height: 220px;
-	width: 250px;
+  margin-top: 20px;
 }
 
-.img {
-	height: 220px;
-	width: 200px;
-	overflow: hidden;
-	margin: auto;
-	margin-top: 20px;
-}
-
-#btnbottom {
-	margin-bottom: 10px;
-}
-
-.thumbnail {
-	height: 170px;
+.thumbnail.top {
+  height: 180px;
 }
 
 .thumbnail.bottom {
-	height: 410px;
+  height: 400px;
 }
 
-//jquery effect
-.thumbnail.highlight {
-	background-color: #FFD273;
+#btnbottom {
+  margin-bottom: 4px;
+}
+
+.img {
+  margin-top: 20px;
 }

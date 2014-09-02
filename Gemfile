@@ -5,15 +5,15 @@ ruby '2.0.0'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
-	gem 'pry-rails'
-	gem 'quiet_assets'
-	gem 'debugger'
+  gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'quiet_assets'
+  gem 'debugger'
 end
 
 group :production do
-	gem 'pg'
-	gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
