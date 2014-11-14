@@ -4,9 +4,9 @@
 
 
 $(document).ready(function(){
-	$("div.thumbnail").on("mouseenter", function() {
-		$(this).addClass('highlight');
-		}).on("mouseleave", function() {
-		$(this).removeClass('highlight');
-	});
+  $("div.thumbnail").on("mouseenter", function() {
+    $(this).addClass('highlight');
+  }).on("mouseleave", function() {
+    $(this).removeClass('highlight');
+  });
 });
