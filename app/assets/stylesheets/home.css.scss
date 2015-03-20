@@ -6,22 +6,20 @@
   margin-top: 10px;
 }
 
-body {
-  background-image: asset_url('aquapattern.png');
-}
-
 .container.body {
   margin-top: 20px;
 }
 
-.thumbnail.top {
-  height: 180px;
-}
-
-.thumbnail.bottom {
-  height: 400px;
+body {
+  background-image: asset_url('aquapattern.png');
 }
 
 #btnbottom {
   margin-bottom: 4px;
+}
+
+//thumbnails customization
+
+.thumbnail {
+  height: 289px;
 }

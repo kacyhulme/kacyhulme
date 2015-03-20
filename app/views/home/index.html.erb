@@ -9,16 +9,18 @@
 
 <div class="container body">
   <div class="row">
-    <div class="col-md-3">
-      <div class="thumbnail top">
-        <h1>Kacy Hulme</h1>
-        <p><%= mail_to "kacy.hulme@gmail.com", "email" %></p>
-        <p><%= link_to "resume", "https://docs.google.com/document/d/1rChU6A7tOMKC-YqSu8G0dKunXfPctQqJhIe5g26lqdc/edit?usp=sharing" %></p>
-      </div>
-      <!-- embedded row/column -->
+    <div class="col-md-9">
+
       <div class="row">
-        <div class="col-md-12">
-          <div class="thumbnail bottom">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <h2>Kacy Hulme</h2>
+            <p><%= mail_to "kacy.hulme@gmail.com", "email" %></p>
+            <p><%= link_to "resume", "https://docs.google.com/document/d/1rChU6A7tOMKC-YqSu8G0dKunXfPctQqJhIe5g26lqdc/edit?usp=sharing" %></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
             <h2>My Projects</h2>
             <h4>Rails</h4>
             <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "Healthy For Real", "http://serene-wildwood-9062.herokuapp.com" %></p>
@@ -28,19 +30,17 @@
             <p class="btn btn-warning btn-sm" id="btnbottom"><%= link_to "EmberCLI/Rails App", "http://floating-journey-6397.herokuapp.com/" %></p>
           </div>
         </div>
-      </div> <!-- embedded row/column end -->
-    </div> <!-- first column end -->
-
-    <div class="col-md-3">
-      <div class="thumbnail top">
-        <h2>Skills</h2>
-        <em>Ruby/Rails, Ember.js/CLI, JavaScript, Heroku, Git, Github, Bootstrap, HTML, CSS, jQuery, PostgreSQL, SQLite, MySQL, Capybara, RSpec.</em>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <h2>Skills</h2>
+            <em>Ruby/Rails, Ember.js/CLI, JavaScript, Heroku, Git, Github, Bootstrap, HTML, CSS, jQuery, PostgreSQL, SQLite, MySQL, Capybara, RSpec.</em>
+          </div>
+        </div>
       </div>
 
-      <!-- embedded row/column -->
       <div class="row">
-        <div class="col-md-12">
-          <div class="thumbnail bottom">
+        <div class="col-md-4">
+          <div class="thumbnail">
             <h2>Links</h2>
             <p><%= link_to "GitHub", "https://github.com/kacyhulme" %></p>
             <p><%= link_to "Twitter", "https://twitter.com/kacyhulme" %></p>
@@ -48,17 +48,13 @@
             <p><%= link_to "Linked In", "https://www.linkedin.com/in/kacyhulme" %></p>
           </div>
         </div>
-      </div> <!-- embedded row/column end -->
-    </div>
-
-    <div class="col-md-3">
-      <div class="thumbnail top">
-        <%= image_tag("infiniti.jpg") %>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="thumbnail bottom">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <%= image_tag("infiniti.jpg") %>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
             <%= image_tag("kacypic4_smaller.jpg") %>
           </div>
         </div>
@@ -68,6 +64,22 @@
     <div class="col-md-3">
       <a class="twitter-timeline" href="https://twitter.com/kacyhulme" data-widget-id="474617050862612480">Tweets by @kacyhulme</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <h2>When I'm not working</h2>
+        <ul class="nav nav-pills">
+          <li role="presentation"><%= link_to "Writing", "https://github.com/kacyhulme" %></li>
+          <li role="presentation"><%= link_to "Acting", "https://twitter.com/kacyhulme" %></li>
+          <li role="presentation"><%= link_to "Art", "https://angel.co/kacyhulme" %></li>
+          <li role="presentation"><%= link_to "Photography", "https://www.linkedin.com/in/kacyhulme" %></li>
+          <li role="presentation"><%= link_to "Jewelry", "https://www.etsy.com/shop/GraffitiGallery?ref=l2-shopheader-name" %></li>
+          <li role="presentation"><%= link_to "Animal Rescue", "https://www.etsy.com/shop/GraffitiGallery?ref=l2-shopheader-name" %></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
