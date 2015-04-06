@@ -8,7 +8,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry-rails'
   gem 'quiet_assets'
-  gem 'debugger'
+  gem 'byebug'
 end
 
 group :production do
