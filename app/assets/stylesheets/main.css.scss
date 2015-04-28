@@ -1,0 +1,22 @@
+
+@import 'mixins';
+@import 'variables';
+@import 'thumbnail';
+
+
+.row.top {
+  margin-top: 10px;
+}
+
+.container.body {
+  margin-top: 20px;
+}
+
+body {
+  @include radial-gradient($background-color-dark, $background-color-light); 
+}
+
+#btnbottom {
+  margin-bottom: 4px;
+  background: $accent-color-second;
+}

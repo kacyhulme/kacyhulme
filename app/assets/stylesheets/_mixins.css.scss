@@ -1,0 +1,9 @@
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor;
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
+}
+
+@mixin radial-gradient($fromColor, $toColor) {
+  background-color: $fromColor;
+  background: -webkit-radial-gradient(top left, circle cover, $fromColor 0%, $toColor 100%);
+}

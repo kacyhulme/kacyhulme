@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+.thumbnail {
+  height: 289px;
+  border: 2px solid $accent-color-first;
+}
+
+.center {
+  text-align: center;
+}
+
+.kacy-pic.thumbnail > img {
+  height: 266px;
+  padding-top: 16px;
+}
+
+.infiniti-pic.thumbnail > img {
+  padding-top: 70px;
+}
+
+.popout {
+  border: 5px solid $accent-color-second;
+  background: $accent-color-first;
+  //height: 299px;
+  //width: 220px;
+  //margin: 10px 7.5px;
+}
