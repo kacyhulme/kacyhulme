@@ -3,7 +3,7 @@
 
 .thumbnail {
   height: 289px;
-  border: 2px solid $accent-color-first;
+  border: 1px solid $accent-color-first;
 }
 
 .center {
@@ -20,9 +20,11 @@
 }
 
 .popout {
-  border: 5px solid $accent-color-second;
-  background: $accent-color-first;
-  //height: 299px;
-  //width: 220px;
-  //margin: 10px 7.5px;
+  border: 1px solid $accent-color-first;
+  background: lighten($accent-color-first, 8%);
+  box-shadow: 10px 10px 5px #696969;  //height: 299px;
+
+  //height: 290px;
+  margin-right: 3px; 
+  margin-top: -2px;
 }

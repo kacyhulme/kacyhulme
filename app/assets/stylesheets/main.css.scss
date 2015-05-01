@@ -13,7 +13,7 @@
 }
 
 body {
-  @include radial-gradient($background-color-dark, $background-color-light); 
+  @include radial-gradient($background-color-light, $background-color-dark); 
 }
 
 #btnbottom {
