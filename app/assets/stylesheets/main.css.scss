@@ -21,13 +21,19 @@ body {
   background: $accent-color-second;
 }
 
-.pic-header {
-  text-align: center;
-  background-color: lighten($background-color-dark, 20%);
-  border-radius: 6px;
-  padding: 10px;
-
-  p {
+@media only screen and (max-width: 1600px) {
+  .pic-header p {
+    text-align: center;
+    background-color: lighten($background-color-dark, 20%);
+    border-radius: 6px;
+    padding: 10px;
     max-height: 100%
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pic-header {
+    max-height: 25%;
+    clear: both;
   }
 }
