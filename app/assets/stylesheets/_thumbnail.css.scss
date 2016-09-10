@@ -1,8 +1,27 @@
 @import 'variables';
 @import 'mixins';
 
+
+@media only screen and (max-width: 1600px) {
+  .thumbnail {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .thumbnail {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .thumbnail {
+    height: 350px;
+  }
+}
+
+
 .thumbnail {
-  height: 350px;
   border: 1px solid $accent-color-first;
 }
 
