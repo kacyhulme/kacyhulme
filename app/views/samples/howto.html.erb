@@ -29,56 +29,99 @@
 		<h2>Important Terms</h2>
 		<br>
 		<div class="row add-border">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				Command Line
 			</div>
-			<div class="col-md-6 add-border-left">
+			<div class="col-md-4 add-vertical-border">
+				<%= image_tag("commandline.png", style: "width: 300px; height: 50px;") %>			
+			</div>			
+			<div class="col-md-4">
 				The location within the terminal screen where you type your commands.
 			</div>
 		</div>
 
 		<div class="row add-border">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				Commands 
 			</div>
-			<div class="col-md-6 add-border-left">
-				Lines of code you write that tell the computer what to do.
+			<div class="col-md-4 add-vertical-border">
+				<%= image_tag("commandexamples.png", style: "width: 300px; height: 50px;") %>
+			</div>			
+			<div class="col-md-4">
+				Lines of code you write in the command line that tell the computer what to do.
 			</div>
 		</div>
 
 		<div class="row add-border">
-			<div class="col-md-6">
+			<div class="col-md-4 ">
 				Terminal 
 			</div>
-			<div class="col-md-6 add-border-left">
-				The terminal, which can also be called the <em>console</em> is a program that is already installed on your computer. It is your gateway to the inner workings of your computer. It could easily be compared to a remote control for a TV. In the same way that push button on remote control that results in the TV responding in an appropriate way, the same goes for the terminal (aka console). When you type certain commands into the terminal
+			<div class="col-md-4 add-vertical-border">
+				<%= image_tag("terminal.png", class: "img-style") %>
+			</div>			
+			<div class="col-md-4">
+				The terminal, which can also be called the <em>console</em> is a program that is already installed on your computer. It is your gateway to the inner workings of your computer. It could easily be compared to a remote control for a TV. In the same way that the push buttons on a remote control result in an action being performed by the TV, the same goes for the terminal (aka console). When you type certain commands into the terminal, certain actions will be performed by the computer.
 			</div>
 		</div>		
 
 		<div class="row add-border">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				Console
 			</div>
-			<div class="col-md-6 add-border-left">
+			<div class="col-md-4 add-vertical-border">
+				<%= image_tag("terminal.png", class: "img-style") %>
+			</div>			
+			<div class="col-md-4">
 				This word is interchangeable with <em>terminal</em> (see definition above). I will use the word terminal going forward.
 			</div>
 		</div>
 
 		<div class="row add-border">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				Browser 
 			</div>
-			<div class="col-md-6 add-border-left">
-				This is the internet, or more accurately, the program you use to access the internet.
+			<div class="col-md-4 add-vertical-border">
+				<%= image_tag("googleimage.jpg", class: "img-style") %>
+			</div>			
+			<div class="col-md-4">
+				This is the internet, or more accurately, the software program you use to access the internet. The browser retrieves a series of files from the server and displays them on the screen.
 			</div>
 		</div>	
 
-		<div class="row add-border add-border-bottom">
-			<div class="col-md-6">
+		<div class="row add-border">
+			<div class="col-md-4">
 				Text Editor 
 			</div>
-			<div class="col-md-6 add-border-left">
-				There are dozens of these and most everyone you meet will have an opinion about the right one. A text editor for programming is not the same thing as TextEdit on your Mac. A text editor for proramming will have some built in features that will be helpful for formatting. Much like when you use Microsoft Word, there are built in formats, such as the first letter of every word after a period is automatically capitalized. The same sort of automatic formatting is available in a text editor for programming, except that the formatting is specific to the different programming languages. The basic formatting will happen automatically and it will be good enough for the purposes of this tutorial. In the future, you can always edit the setting in the text editor to fit wiht your needs and likes. I suggest you use one that is free for now. You can always upgrade later once you know more and are able to really do research to figure out which editor is best for your needs and style. For beginners, I recommend Sublime Text because there is a free trial and it is easy to use. Visit https://www.sublimetext.com/3 and click on this link <img>put image here</img> and the program will download automatically.
+			<div class="col-md-4 add-left-border">
+				<%= image_tag("sublimetextimage.png", class: "img-style") %>
+			</div>
+			<div class="col-md-4 add-vertical-border">
+				There are dozens of text editors. Most have a preferred editor. I suggest you use one that is free for now. You can upgrade later once you know your unique needs and style. A text editor for programming is not the same thing as TextEdit on your Mac. A text editor for programming will have built-in features that TextEdit does not have. For example, if you have used Microsoft Word, you have seen built-in formats, such as the first letter of every word after a period is automatically capitalized. Similar automatic formatting is available in a text editor for programming. For beginners, I recommend Sublime Text because there is a free trial and it is easy to use. See section 2.3 for directions on how to download Sublime Text.
+			</div>
+		</div>
+		<br>
+
+		<div class="row add-border">
+			<div class="col-md-4">
+				HTML 
+			</div>
+			<div class="col-md-4 add-left-border">
+				<%= image_tag("htmlexample.png", class: "img-style") %>
+			</div>
+			<div class="col-md-4 add-vertical-border">
+				HTML stands for Hypertext Markup Language. It is the language used in a file. HTML has unique formatting. Files are written in HTML because the browser can read HTML and therefore renders the HTML on a webpage. However, not all files are written in HTML. Files can be written in many languages. Some of these languages include: Ruby, JavaScript, Python and PHP. 
+			</div>
+		</div>
+
+		<div class="row add-border add-border-bottom">
+			<div class="col-md-4">
+				CSS 
+			</div>
+			<div class="col-md-4 add-left-border">
+				<%= image_tag("cssexample.png", class: "img-style") %>
+			</div>
+			<div class="col-md-4 add-vertical-border">
+				CSS stands for Cascading Style Sheets. It is the language used in a file. CSS has unique formatting. Files written in CSS are used to style the HTML file that is rendered by the browser.
 			</div>
 		</div>
 		<br>
@@ -89,26 +132,58 @@
 			Chapter 1: The terminal
 			<ul>
 				<li>Section 1.1: What is the terminal?</li>
+				<p>The terminal, which can also be called the <em>console</em> is a program that is already installed on your computer. It is your gateway to the inner workings of your computer. It could easily be compared to a remote control for a TV. In the same way that the push buttons on a remote control result in an action being performed by the TV, the same goes for the terminal (aka console). When you type certain commands into the terminal, certain actions will be performed by the computer.</p>
+				
 				<li>Section 1.2: How to open the terminal</li>
+				<p>To access the terminal, navigate to your Finder Window. Locate the Applications folder. Open the Applications folder and locate the Utilities folder. Open the utilities folder and locate the application named Terminal. Double click on it and it will open. See image below.</p>
+				<p><%= image_tag("finderwindow.png", style: "width:350px; height:175px;") %></p>
+				After clicking the Terminal application, a new window will open which should look like the image below:
+				<p><%= image_tag("blankterminal.png", style: "width:350px; height:175px;") %></p>
+
 				<li>Section 1.3: How to enter commands in the terminal </li>
-				<li>Section 1.4: Basic, helpful commands for the terminal</li>
+				<p>Typing in the terminal is the same as typing anywhere. There are built-in commands that the computer already knows. Learnign what all these are will take time. One such built-in command is <em>pwd</em>. Type <em>pwd</em> in the terminal and watch what happens. You should see a response similar to the one in the image below. The <em>pwd</em> commmand is one the computer already knows. It simply means <em>print current working directory</em>, which is also called the path. This is your location within all files on your computer. 
+				<p><%= image_tag("pwdterminal.png", style: "width:350px; height:175px;") %></p>
+				<p>Try another command. Type <em>ls</em>in the terminal and watch what happens. You should see a response similar to the one in the image below. The <em>ls</em> commmand is one the computer already knows. It is simply a short version of the word <em>list</em>. This command asks the computer to list the files in the current working directory.</p>
+				<p><%= image_tag("lsterminal.png", style: "width:350px; height:175px;") %></p>
+				
 			</ul>
 
 			Chapter 2: The text editor
 			<ul>
 				<li>Section 2.1: What is a text editor?</li>
+				<p>A text editor is a program where you create and save files. Inside each of these files are directions for the browswer. The browswer will receive these files and display according to the directions you gave it in these files. </p>
+				
 				<li>Section 2.2: Why do I need a text editor?</li>
+				<p>A text editor provides a clean and clear way to organize the files that the browser will use to display the information you write in them. It is structured in the same way that your files are structrued on your computer. There are folders and files. You can create new folders and file and move them around as needed.</p>
+
 				<li>Section 2.3: Which text editor should I use? </li>
+				<p>I strongly recommend you start out using a free text editor. Sublime Text is a great choice. The latest version is Sublime Text 3. Visit <%= link_to "https://www.sublimetext.com/3", 'https://www.sublimetext.com/3' %>. Click on the link <b>OS X (10.7 or later is required)</b>. After clicking this link, the Application will download automatically. Navigate to your Finder window. Inside the Downloads folder in your finder window, locate the downloaded file. Double click on the application and it will open automatically. It will look like the image below.</p>
+				<p><%= image_tag("sublimetextimage.png", style: "width:350px; height:175px;") %></p>
+
 				<li>Section 2.4: How do I use a text editor? </li>
+				With the Sublime Text application still open from the previous step, navigate to the menu at the top of the page and click on the <em>File</em> label. When it drops down, there will be a list of action items. Click the first item labeled <em>New File</em>. This will create a new file within Sublime Text. Next, navigate to the <em>File</em> label again and click <em>Save As</em>. A window will pop up with a textbox where you can type in the name of the file. For now, name this first file <em>index.html</em>. Click <em>Save</em> at the bottom of the window. Keep the Text Editor open. We will return to it in the 'Build Your First Webpage' section.
 			</ul>
 
 			Chapter 3: The browser
 			<ul>
 				<li>Section 3.1: What is the browser?</li>
+				<p>This is the internet, or more accurately, the software program you use to access the internet. The browser retrieves a series of files from the server and displays them on the screen.</p>
 				<li>Section 3.2: Which browser should I use?</li>
+				<p>This tutorial uses Chrome, so I recommend using Chrome. However, the directions here should differ very much from Safari or Firefox. </p>
 				<li>Section 3.3: How do I open a file in the browser? </li>
+				<p></p>
 				<li>Section 3.4: </li>
 				<li>Section 3.5: </li>															
+			</ul>
+			<br>
+
+			Chapter 3: Build Your First Webpage
+			<ul>
+				<li>Section 4.1: </li>
+				<li>Section 4.2: </li>
+				<li>Section 4.3: </li>
+				<li>Section 4.4: </li>
+				<li>Section 4.5: </li>															
 			</ul>
 			<br>
 
