@@ -39,15 +39,27 @@ body {
 }
 
 .add-border {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-left: 1px solid $border-color;
 }
 
 .add-border-bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $border-color;
 }
 
-.add-border-left {
-  border-left: 1px solid black;
+.add-vertical-border {
+  border-right: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+}
+
+.add-left-border {
+  border-left: 1px solid $border-color;
+}
+
+.img-style {
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  height: 200px;
+  width: 350px; 
 }
