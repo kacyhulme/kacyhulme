@@ -10,6 +10,16 @@ $(".thumbnail")
   $(this).removeClass('popout');
 });
 
+$(window).load(function() {
+  $( ".thumbnail" ).animate({
+    opacity: 1.25,
+    // left: "+=50",
+    // height: "toggle"
+  }, 3000, function() {
+    // Animation complete.
+  });
+});
+
 // Create the event.
 // var event = document.createEvent('Event');
 // var elem = document.getElementById("trythis");
