@@ -9,50 +9,27 @@
   opacity: 0;
 }
 
-.cells.addcolor:hover { 
-  background-color: $accent-color-first;
-  border: 3px solid lighten($accent-color-first, 8%);;
-
+.cells:hover {
+  border: 3px solid lighten($accent-color-first, 8%);
+  background: $accent-color-first;
+  box-shadow: 10px 10px 5px #545454;  //height: 299px;
+  margin-right: 3px; 
+  margin-top: -2px;
 }
 
 .bottom-row {
   height: 240px;
+  margin-bottom: 40px; 
 }
 
-// @media only screen and (max-width: 1600px) {
-//   .thumbnail {
-//     height: 400px;
-//   }
-// }
-
-// @media only screen and (max-width: 1200px) {
-//   .thumbnail {
-//     height: 400px;
-//   }
-// }
-
-// @media only screen and (max-width: 992px) {
-//   .thumbnail {
-//     height: 350px;
-//   }
-// }
-
-
-// .thumbnail {
-//   border: 1px solid $accent-color-first;
-//   opacity: 0;
-// }
-
- #twttr-sandbox-0 {
-    height: 720px;
-  }
-  #twitter-widget-0 {
-    height: 720px;
-  }
+#twttr-sandbox-0 {
+  height: 720px;
+}
+#twitter-widget-0 {
+  height: 720px;
+}
 
 .kacy-pic.cell > img {
-  //height: 266px;
-  //width: auto;
   max-height: 100%;
   max-width: 100%;
   padding-top: 16px;
@@ -61,12 +38,4 @@
 
 .infiniti-pic.cell > img {
   margin-left: 20px;
-}
-
-.popout {
-  border: 3px solid $accent-color-first;
-  background: lighten($accent-color-first, 8%);
-  box-shadow: 10px 10px 5px #696969;  //height: 299px;
-  margin-right: 3px; 
-  margin-top: -2px;
 }

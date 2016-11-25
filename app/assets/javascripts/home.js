@@ -2,14 +2,6 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(".cells.bounceme")
-.on("mouseenter", function() {
-  $(this).addClass('popout');
-})
-.on("mouseleave", function() {
-  $(this).removeClass('popout');
-});
-
 $(window).load(function() {
   $( ".cells" ).animate({
     opacity: 1.25,
