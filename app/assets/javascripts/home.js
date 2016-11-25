@@ -2,7 +2,7 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(".thumbnail")
+$(".cells")
 .on("mouseenter", function() {
   $(this).addClass('popout');
 })
@@ -11,7 +11,7 @@ $(".thumbnail")
 });
 
 $(window).load(function() {
-  $( ".thumbnail" ).animate({
+  $( ".cells" ).animate({
     opacity: 1.25,
     // left: "+=50",
     // height: "toggle"
