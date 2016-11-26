@@ -5,12 +5,24 @@
 $(window).load(function() {
   $( ".cells" ).animate({
     opacity: 1.25,
-    // left: "+=50",
-    // height: "toggle"
   }, 3000, function() {
-    // Animation complete.
   });
 });
+
+$(".wrapper").click(function() {
+  $(".bodydiv").show();
+})
+
+
+
+
+
+
+
+
+
+
+
 
 // Create the event.
 // var event = document.createEvent('Event');

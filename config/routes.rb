@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "samples/howto" => "samples#howto"
   get "samples/whitepaper" => "samples#whitepaper"
   get "samples/fiction" => "samples#fiction"
+  get "samples/cssfun" => "samples#cssfun"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

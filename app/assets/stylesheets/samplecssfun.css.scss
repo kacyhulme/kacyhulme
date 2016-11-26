@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'mixins';
+
+.wrapper {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.bodydiv {
+  display: none;
+  width: auto;
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px 50px 0 0;
+  background-color: $accent-color-second;
+  border-radius: 4px;
+  font-size: 28px;
+}
+
+// click me button
+.button {
+  background-color: $accent-color-first;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  width: 150px;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content { 
+	position: absolute;
+	transition: top 0.3s;
+  margin-top: 15px; 
+  text-align: center;
+  width: 150px;
+  height: 25px;
+}
+
+.top {
+	top: 0;
+}
+
+.bottom {
+  top: 100px;
+  color: black;
+}
+
+.button:hover .bottom {
+  top: 0px;
+}
+
+.button:hover .top {
+	top: -100px;
+}
