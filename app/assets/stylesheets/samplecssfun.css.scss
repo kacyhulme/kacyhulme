@@ -3,6 +3,7 @@
 
 .wrapper {
   margin: 50px;
+  height: 100%;
 }
 
 .bodydiv {
@@ -11,9 +12,13 @@
   text-align: center;
   border: 2px solid black;
   margin: 20px 50px 0 0;
+  padding-top: 5px;
   background-color: $accent-color-second;
   border-radius: 4px;
-  font-size: 28px;
+  p {
+    font-size: 28px;
+    font-family: $font-family-2;
+  }
 }
 
 .innerdiv {
@@ -39,6 +44,7 @@
   height: 250px;
   width: 250px;
   margin: 100px auto;
+  text-align: center;
   background-color: $accent-color-second;
   animation-name: stretch;
   animation-duration: 1.5s; 
@@ -48,6 +54,9 @@
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
+  p {
+    padding: 45% 10%;
+  }
 }
 
 @keyframes stretch {
@@ -61,7 +70,7 @@
   }
   100% {
     transform: scale(1.5);
-    background-color: $secondary-color;
+    background-color: $background-color-light;
   }
 }
 

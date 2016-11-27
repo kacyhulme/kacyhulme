@@ -10,11 +10,9 @@ $(window).load(function() {
 });
 
 $(".wrapper").click(function() {
-  $(".bodydiv").show();
-  $(".innerdiv").show();  
+  $(".bodydiv").toggle();
+  $(".innerdiv").toggle();  
 })
-
-
 
 
 
