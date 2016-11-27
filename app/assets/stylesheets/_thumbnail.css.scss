@@ -11,8 +11,8 @@
 }
 
 .cells:hover {
-  border: 3px solid lighten($accent-color-first, 8%);
-  background: $accent-color-first;
+  border: 3px solid $accent-color-first;
+  background: lighten($accent-color-first, 8%);
   box-shadow: 10px 10px 5px #545454;  //height: 299px;
   margin-right: 3px; 
   margin-top: -2px;
