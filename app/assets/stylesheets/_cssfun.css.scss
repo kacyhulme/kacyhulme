@@ -126,22 +126,22 @@ html {
   margin-left: 50px;
 }
 
-.modal-button-message { 
-  position: absolute;
-  margin-top: 15px; 
-  text-align: center;
-  width: 150px;
-  height: 25px;
-}
+// .modal-button-message { 
+//   position: absolute;
+//   margin-top: 15px; 
+//   width: 150px;
+//   height: 25px;
+// }
 
 .modal-button {
+  text-align: center;
   background-color: $accent-color-first;
-  color: white;
+  color: black;
   display: inline-block;
   border-radius: 4px;
   width: 150px;
   height: 55px;
-  position: relative;
+  padding-top: 18px;
 }
 
 .modalDialog {
