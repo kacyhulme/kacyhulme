@@ -9,9 +9,12 @@ $(window).load(function() {
   });
 });
 
-$(".wrapper").click(function() {
-  $(".bodydiv").toggle();
-  $(".innerdiv").toggle();  
+$(".modal-button").hide();  
+
+$(".opening-button-wrapper").click(function() {
+  $(".intro-div").toggle();
+  $(".description-div").toggle();  
+  $(".modal-button").toggle();  
 })
 
 
