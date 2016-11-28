@@ -121,19 +121,8 @@ html {
 }
 
 // overlay
-
-.modal-button-container {
-  margin-left: 50px;
-}
-
-// .modal-button-message { 
-//   position: absolute;
-//   margin-top: 15px; 
-//   width: 150px;
-//   height: 25px;
-// }
-
 .modal-button {
+  margin-left: 50px;
   text-align: center;
   background-color: $accent-color-first;
   color: black;
@@ -151,7 +140,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.8);
+  background: white;
   z-index: 99999;
   opacity:0;
   visibility: hidden;
@@ -173,10 +162,10 @@ html {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
+  background: red;
+  //background: -moz-linear-gradient(#fff, #999);
+  //background: -webkit-linear-gradient(#fff, #999);
+  //background: -o-linear-gradient(#fff, #999);
 }
 
 
