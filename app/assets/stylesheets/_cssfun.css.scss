@@ -116,8 +116,8 @@ html {
 	top: -100px;
 }
 
-// overlay
-.modal-button {
+// modal & overlay
+.show-directions {
   margin-left: 50px;
   text-align: center;
   background-color: $accent-color-first;
@@ -125,14 +125,15 @@ html {
   display: inline-block;
   border-radius: 4px;
   width: 150px;
-  height: 55px;
-  padding-top: 18px;
-}
-
-.show-directions {
+  height: 70px;
+  padding: 20px 5px;
   display: none;
 }
 
+.directions {
+  width: 20px;
+  height: 20px;
+}
 .outer-wrapper {
   visibility: hidden;
 }
@@ -143,49 +144,3 @@ html {
   height: 100%;
   background-color: red;
 }
-
-.directions {
-  width: 20px;
-  height: 20px;
-}
-
-
-
-// .modalDialog {
-//   position: fixed;
-//   font-family: Arial, Helvetica, sans-serif;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   background: white;
-//   z-index: 99999;
-//   opacity:0;
-//   visibility: hidden;
-//   -webkit-transition: opacity 400ms ease-in;
-//   -moz-transition: opacity 400ms ease-in;
-//   transition: opacity 400ms ease-in;
-//   pointer-events: none;
-// }
-
-// .modalDialog:target {
-//   opacity:1;
-//   pointer-events: auto;
-// }
-
-// .modalDialog > div {
-//   visibility: visible; 
-//   width: 400px;
-//   position: relative;
-//   margin: 10% auto;
-//   padding: 5px 20px 13px 20px;
-//   border-radius: 10px;
-//   background: red;
-//   //background: -moz-linear-gradient(#fff, #999);
-//   //background: -webkit-linear-gradient(#fff, #999);
-//   //background: -o-linear-gradient(#fff, #999);
-// }
-
-
-
-
