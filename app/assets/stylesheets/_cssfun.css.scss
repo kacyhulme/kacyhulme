@@ -134,17 +134,6 @@ html {
   visibility: hidden;
 }
 
-
-.inner-directions { 
-  position: absolute;
-  background-color: lightgrey;
-  margin: 200px;
-}
-
-.inner-directions > p {
-  margin: 20px;
-}
-
 .outer-wrapper:target {
   position: fixed;
   visibility: visible;
@@ -154,4 +143,18 @@ html {
   bottom: 0;
   background-color: rgba(0,0,0,0.8);
   z-index: 9999;
+}
+
+.inner-directions { 
+  position: absolute;
+  background-color: lightgrey;
+  margin: 200px;
+}
+
+.inner-directions > p {
+  margin: 25px;
+}
+
+.close {
+  margin: 8px 10px 2px 2px
 }
