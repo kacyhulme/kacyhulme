@@ -117,7 +117,7 @@ html {
 }
 
 // modal & overlay
-.show-directions {
+.show-directions-button {
   margin-left: 50px;
   text-align: center;
   background-color: $accent-color-first;
@@ -130,12 +130,16 @@ html {
   display: none;
 }
 
-.directions {
-  width: 20px;
-  height: 20px;
-}
 .outer-wrapper {
   visibility: hidden;
+}
+
+.directions {
+  
+}
+
+.inner-directions { 
+
 }
 
 .outer-wrapper:target {

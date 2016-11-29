@@ -13,7 +13,7 @@ $(".modal-button").hide();
 
 $(".opening-button-wrapper").click(function() {
   $(".intro-div").toggle();
-  $(".show-directions").toggle();
+  $(".show-directions-button").toggle();
   $(".description-div").toggle();  
   $(".modal-button").toggle();  
 })
