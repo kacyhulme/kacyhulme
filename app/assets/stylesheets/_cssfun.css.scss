@@ -134,14 +134,14 @@ html {
   visibility: hidden;
 }
 
-.directions {
-  margin-top: 20px;
-  position: absolute;
-}
+// .directions {
+//   position: absolute;
+// }
 
 .inner-directions { 
-  margin: 20px;
   position: absolute;
+  background-color: lightgrey;
+  margin: 200px;
 }
 
 .outer-wrapper:target {
@@ -151,5 +151,5 @@ html {
   height: 100%;
   top: 0;
   bottom: 0;
-  background-color: grey;
+  background-color: rgba(0,0,0,0.8);
 }
