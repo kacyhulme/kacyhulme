@@ -10,10 +10,6 @@ html {
   max-height: auto;
 }
 
-.lower-wrapper {
-
-}
-
 .intro-div {
   display: none;
   width: auto;
@@ -133,10 +129,14 @@ html {
   padding-top: 18px;
 }
 
+.show-directions {
+  display: none;
+}
+
 .outer-wrapper {
   visibility: hidden;
 }
-/* Display the modal when targeted */
+
 .outer-wrapper:target {
   visibility: visible;
   width: 100%;
