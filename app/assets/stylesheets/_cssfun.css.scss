@@ -78,8 +78,7 @@ html {
   }
 }
 
-// click me button
-.button {
+.click-me-button {
   background-color: $accent-color-first;
   color: white;
   display: inline-block;
@@ -90,7 +89,7 @@ html {
   overflow: hidden;
 }
 
-.button-message { 
+.click-me-button-message { 
 	position: absolute;
 	transition: top 0.3s;
   margin-top: 15px; 
@@ -108,12 +107,45 @@ html {
   color: black;
 }
 
-.button:hover .secondary-message {
+.click-me-button:hover .secondary-message {
   top: 0px;
 }
 
-.button:hover .initial-message {
+.click-me-button:hover .initial-message {
 	top: -100px;
+}
+
+.or-me-button {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 55px;
+  background-color: $accent-color-first;
+  color: white;
+  border-radius: 4px;
+  transition: all 2s;
+}
+
+.or-me-button-message {
+  position: absolute;
+  margin: auto; 
+  top: 30%;
+  left: 25%;
+  transition: all 2s;
+}
+
+.or-me-button:hover {
+  background-color: $accent-color-second;
+  color: red;
+  border-radius: 20px;
+  width: 300px;
+  height: 110px;
+  text-align: center;
+}
+
+.or-me-button:hover > .or-me-button-message {
+  top: 40%;
+  left: 36%;
 }
 
 // modal & overlay

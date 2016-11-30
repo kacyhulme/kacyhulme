@@ -11,7 +11,7 @@ $(window).load(function() {
 
 $(".modal-button").hide();  
 
-$(".opening-button-wrapper").click(function() {
+$(".click-me-button").click(function() {
   $(".intro-div").toggle();
   $(".show-directions-button").toggle();
   $(".description-div").toggle();  
