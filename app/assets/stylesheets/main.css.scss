@@ -4,6 +4,10 @@
 @import 'thumbnail';
 @import 'cssfun';
 
+html {
+  height: 100%
+}
+
 h2 {
   text-align: center;
   font-family: $font-family-2;

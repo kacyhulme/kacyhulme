@@ -1,9 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
-html {
-  height: 100%
-}
+// html {
+//   height: 100%
+// }
 
 .opening-button-wrapper {
   margin: 50px;
@@ -18,7 +18,7 @@ html {
   margin: 120px 50px 0 0;
   padding-top: 5px;
   background-color: $accent-color-second;
-  border-radius: 4px;
+  border-radius: $radius;
   p {
     font-size: 28px;
     font-family: $font-family-2;
@@ -82,7 +82,7 @@ html {
   background-color: $accent-color-first;
   color: white;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: $radius;
   width: 150px;
   height: 55px;
   position: relative;
@@ -122,7 +122,7 @@ html {
   height: 55px;
   background-color: $accent-color-first;
   color: white;
-  border-radius: 4px;
+  border-radius: $radius;
   transition: all 2s;
 }
 
@@ -136,7 +136,7 @@ html {
 
 .or-me-button:hover {
   background-color: $accent-color-second;
-  color: red;
+  color: $accent-color-first;
   border-radius: 20px;
   width: 300px;
   height: 110px;
@@ -148,6 +148,34 @@ html {
   left: 36%;
 }
 
+#or-me-button {
+ visibility: hidden;
+}
+
+#or-me-button:target{
+  visibility: visible;
+  background-color: $accent-color-first;
+  float: left;
+  border-radius: $radius;
+}
+
+#or-me-button > div {
+  margin: 10px 10px 10px 25px;
+  border: 1px solid black;
+  width: 30%;
+  float: left;
+  background-color: $accent-color-first;
+  border-radius: $radius;
+}
+
+#or-me-button > div > p {
+  padding: 25px;
+}
+
+#or-me-button > div:hover {
+  transform: skew(15deg, 10deg);
+}
+
 // modal & overlay
 .show-directions-button {
   margin-left: 50px;
@@ -155,7 +183,7 @@ html {
   background-color: $accent-color-first;
   color: black;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: $radius;
   width: 150px;
   height: 70px;
   padding: 20px 5px;
