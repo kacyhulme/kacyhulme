@@ -4,9 +4,6 @@
 @import 'thumbnail';
 @import 'cssfun';
 
-html {
-  height: 100%
-}
 
 h2 {
   text-align: center;
@@ -22,7 +19,7 @@ h2 {
 }
 
 body {
-  @include radial-gradient($background-color-light, $background-color-dark); 
+  //@include radial-gradient($background-color-light, $background-color-dark); 
   font-family: $font-family-1;
 }
 
