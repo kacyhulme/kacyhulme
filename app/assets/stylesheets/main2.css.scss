@@ -4,12 +4,18 @@ h1, h2 {
   font-family: 'Kaushan Script', cursive;
 }
 
-.container {
+a {
+  color: orange;
+}
+body {
   margin-top: 20px;
+  //background: linear-gradient(to right, $background-color-light, $background-color-dark)
+  background-image:  radial-gradient(875px, lighten($background-color-dark, 10%) 750px, $background-color-light 850px); 
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
+a {
+  text-color: $background-color-light; 
 }
 
 .header {
@@ -30,27 +36,23 @@ body {
 }
 
 .col-md-8 {
-  background-color: $light-border-color;
-}
-
-.col-md-2 {
-  height: 500px;
+  height: 1200px;
 }
 
 .my-projects, .my-skills, .my-links, .my-hobbies {
   margin: 1px 5px; 
-  padding: 20px ;
   text-align: center;
-  //background-image:  radial-gradient(375px, $background-color-light 50px, $background-color-dark 360px); 
+  ul > li {
+    float:none; 
+    display:inline-block;
+  }
 }
 
-.nav-pills > li {
-  float: none;
-}
 
 .twitter-widget-0 {
   max-height: 500px;
 }
 
 
-
+//save
+//background-image:  radial-gradient(375px, $background-color-light 50px, $background-color-dark 360px); 
