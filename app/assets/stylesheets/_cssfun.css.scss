@@ -27,6 +27,15 @@
   }
 }
 
+.spinning-arrow {
+  transition: transform 4s;
+}
+
+.spinning-arrow:hover {
+  transform: rotate(360deg);
+}
+
+
 .description-div {
   display: none;
 }
