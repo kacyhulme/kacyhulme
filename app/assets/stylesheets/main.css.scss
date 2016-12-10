@@ -17,7 +17,7 @@ h2 {
   margin-top: 20px;
 }
 
-body {
+.portfolio-page-wrapper {
   @include radial-gradient($background-color-light, $background-color-dark); 
   font-family: $font-family-1;
 }

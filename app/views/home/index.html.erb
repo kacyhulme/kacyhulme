@@ -1,24 +1,25 @@
   <!-- SnapWidget -->
-  <div class="row top">
-   <div class="col-md-4 pic-header">
-     <p>Just for fun, I write a blog about living and eating healthy. It's called <%= link_to "Healthy For Real", "http://www.healthyforreal.com", {style:"color:darkblue;"} %>. Here are some fun pics from my Instagram feed.
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </p>
-  </div>
-  <div class="col-md-8">
-    <div class="ig-root DiX1e3 clearfix"> </div>
-    <script>
-     scripts=[];
-     host='http://www.uptsi.com';
-     js=document.createElement('script');
-     js.src=host+"/tools/widgets/b/hI4839G4h4Z052jD1e76HjK8T6gSiW8QR354NJFlile674aLV8a12i7MY0cf2j2d516k9c";
-     scripts[0] = js;
-     for(i=0;i< scripts.length; i++){document.getElementsByTagName("HEAD")[0].appendChild(scripts[i]); }
-   </script>
+  <div class="portfolio-page-wrapper">
+    <div class="row top">
+     <div class="col-md-4 pic-header">
+       <p>Just for fun, I write a blog about living and eating healthy. It's called <%= link_to "Healthy For Real", "http://www.healthyforreal.com", {style:"color:darkblue;"} %>. Here are some fun pics from my Instagram feed.
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </p>
+    </div>
+    <div class="col-md-8">
+      <div class="ig-root DiX1e3 clearfix"> </div>
+      <script>
+       scripts=[];
+       host='http://www.uptsi.com';
+       js=document.createElement('script');
+       js.src=host+"/tools/widgets/b/hI4839G4h4Z052jD1e76HjK8T6gSiW8QR354NJFlile674aLV8a12i7MY0cf2j2d516k9c";
+       scripts[0] = js;
+       for(i=0;i< scripts.length; i++){document.getElementsByTagName("HEAD")[0].appendChild(scripts[i]); }
+     </script>
+    </div>
 </div>
 
-
-<div class="container body">
+ <div class="container body">
   <div class="row">
     <div class="col-md-9">
       <div class="row">
@@ -43,22 +44,35 @@
         <div class="col-md-9">
           <div class="cells">
             <h2 style="margin-bottom: 40px;">My Projects</h2>
-            <p>Node, HTML5 Canvas, JavaScript, Express.js, Bootstrap, Heroku</p>
-            <p class="btn btn-xs btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/heatwave" %></p>
-            <p class="btn btn-xs btnbottom"><%= link_to "Live Version", "https://shielded-ravine-94683.herokuapp.com" %></p>
-
-            <p>Angular</p>
-            <div class="btn btn-xs btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/farm_sanctuary" %></div>
-
-            <p>jQuery, Bootstrap, Sass & Node</p>
-            <p class="btn btn-xs btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/javascript_graffiti" %></p>
-            <p class="btn btn-xs btnbottom"><%= link_to "Live Version", "https://floating-tundra-8531.herokuapp.com" %></p>
-
-            <p>Python</p>
-            <p class="btn btn-xs btnbottom"><%= link_to "Scrapy", "https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py" %></p>
-            <p class="btn btn-xs btnbottom"><%= link_to "All the Things", "https://github.com/kacyhulme/grocerygame/blob/master/pygame.py" %></p>
+            <div>
+              <span>Node, HTML5 Canvas, JavaScript, Express.js, Bootstrap, Heroku: </span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/heatwave" %></span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Live Version", "https://shielded-ravine-94683.herokuapp.com" %></span>
+            </div>
+            <div>
+              <span>Angular: </span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/farm_sanctuary" %></span>
+            </div>
+            <div>
+              <span>jQuery, Bootstrap, Sass & Node: </span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Code", "https://github.com/kacyhulme/javascript_graffiti" %></span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Live Version", "https://floating-tundra-8531.herokuapp.com" %></span>
+            </div>
+            <div>
+              <span>Python :</span>
+              <span class="btn btn-sm btnbottom"><%= link_to "Scrapy", "https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py" %></span>
+              <span class="btn btn-sm btnbottom"><%= link_to "All the Things", "https://github.com/kacyhulme/grocerygame/blob/master/pygame.py" %></span>
+            </div>
+            <div>
+              <span>Just Some CSS Fun :</span>
+              <span class="btn btn-sm btnbottom"><%= link_to "CSS", "/samples/cssfun" %></span>
+            </div>
+            <div>
+              <span>Just Some JavaScript Fun :</span>
+              <span class="btn btn-sm btnbottom"><%= link_to "JavaScript", "https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py" %></span>
+            </div>
             <hr>
-            <p style="padding-top: 10px;"><em>*this site is built with Ruby/Rails</em></p>
+            <span style="padding-top: 10px;"><em>*this site is built with Ruby/Rails</em></span>
           </div>  
         </div>
 
@@ -110,6 +124,7 @@
     </div>
   </div>
 
+</div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
