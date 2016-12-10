@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+
+.js-fun-page-wrapper {
+  height: 1200px;
+  background-color: white;
+  font-family: $font-family-1;
+}
