@@ -9,13 +9,13 @@ $(window).load(function() {
   });
 });
 
-$(".show-overlay-button").hide();  
+$(".modal-button").hide();  
 
 $(".click-me-button").click(function() {
-  $(".welcome-div").toggle();
-  $(".show-overlay-button").toggle();
-  $(".intro-div").toggle();  
-  $(".show-overlay-button").toggle();
+  $(".intro-div").toggle();
+  $(".show-directions-button").toggle();
+  $(".description-div").toggle();  
+  $(".modal-button").toggle();  
 })
 
 

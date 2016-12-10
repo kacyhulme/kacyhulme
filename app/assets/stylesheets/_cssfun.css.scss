@@ -1,19 +1,16 @@
 @import 'variables';
 @import 'mixins';
 
-.css-fun-page-wrapper {
-  height: 1200px;
-  background-color: white;
-  font-family: $font-family-1;
+html {
+  height: 100%
 }
-
 
 .opening-button-wrapper {
   margin: 50px;
   max-height: auto;
 }
 
-.welcome-div {
+.intro-div {
   display: none;
   width: auto;
   text-align: center;
@@ -21,14 +18,14 @@
   margin: 120px 50px 0 0;
   padding-top: 5px;
   background-color: $accent-color-second;
-  border-radius: $radius;
+  border-radius: 4px;
   p {
     font-size: 28px;
     font-family: $font-family-2;
   }
 }
 
-.intro-div {
+.description-div {
   display: none;
 }
 
@@ -85,7 +82,7 @@
   background-color: $accent-color-first;
   color: white;
   display: inline-block;
-  border-radius: $radius;
+  border-radius: 4px;
   width: 150px;
   height: 55px;
   position: relative;
@@ -93,8 +90,8 @@
 }
 
 .click-me-button-message { 
-	position: absolute;
-	transition: top 0.3s;
+  position: absolute;
+  transition: top 0.3s;
   margin-top: 15px; 
   text-align: center;
   width: 150px;
@@ -102,7 +99,7 @@
 }
 
 .initial-message {
-	top: 0;
+  top: 0;
 }
 
 .secondary-message {
@@ -115,7 +112,7 @@
 }
 
 .click-me-button:hover .initial-message {
-	top: -100px;
+  top: -100px;
 }
 
 .or-me-button {
@@ -125,7 +122,7 @@
   height: 55px;
   background-color: $accent-color-first;
   color: white;
-  border-radius: $radius;
+  border-radius: 4px;
   transition: all 2s;
 }
 
@@ -139,7 +136,7 @@
 
 .or-me-button:hover {
   background-color: $accent-color-second;
-  color: $accent-color-first;
+  color: red;
   border-radius: 20px;
   width: 300px;
   height: 110px;
@@ -151,53 +148,25 @@
   left: 36%;
 }
 
-#or-me-button {
- visibility: hidden;
-}
-
-#or-me-button:target{
-  visibility: visible;
-  background-color: $accent-color-first;
-  float: left;
-  border-radius: $radius;
-}
-
-#or-me-button > div {
-  margin: 10px 10px 10px 25px;
-  border: 1px solid black;
-  width: 30%;
-  float: left;
-  background-color: $accent-color-first;
-  border-radius: $radius;
-}
-
-#or-me-button > div > p {
-  padding: 25px;
-}
-
-#or-me-button > div:hover {
-  transform: skew(15deg, 10deg);
-}
-
 // modal & overlay
-.show-overlay-button {
+.show-directions-button {
   margin-left: 50px;
   text-align: center;
   background-color: $accent-color-first;
   color: black;
   display: inline-block;
-  border-radius: $radius;
+  border-radius: 4px;
   width: 150px;
   height: 70px;
   padding: 20px 5px;
   display: none;
 }
 
-.outer-overlay {
+.outer-wrapper {
   visibility: hidden;
 }
 
-.outer-overlay:target {
+.outer-wrapper:target {
   position: fixed;
   visibility: visible;
   width: 100%;
@@ -208,13 +177,13 @@
   z-index: 9999;
 }
 
-.inner-overlay { 
+.inner-directions { 
   position: absolute;
   background-color: lightgrey;
   margin: 200px;
 }
 
-.inner-overlay > p {
+.inner-directions > p {
   margin: 25px;
 }
 
