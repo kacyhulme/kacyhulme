@@ -1,9 +1,11 @@
 @import 'variables';
 @import 'mixins';
 
-// html {
-//   height: 100%
-// }
+.css-fun-page-wrapper {
+  height: 1200px;
+  background-color: white;
+}
+
 
 .opening-button-wrapper {
   margin: 50px;
