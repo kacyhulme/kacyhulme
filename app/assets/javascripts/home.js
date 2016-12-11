@@ -12,7 +12,7 @@ $(window).load(function() {
 $(".modal-button").hide();  
 
 $(".click-me-button").click(function() {
-  $(".intro-div").toggle();
+  $(".welcome-div").toggle();
   $(".show-directions-button").toggle();
   $(".description-div").toggle();  
   $(".modal-button").toggle();  
