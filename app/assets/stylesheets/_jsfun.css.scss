@@ -6,4 +6,15 @@
   height: 1200px;
   background-color: white;
   font-family: $font-family-1;
+  margin-top: 20px;
+
+  div {
+    float: left;
+  }
+  div:first-of-type {
+    padding-top: 5px;
+  }
+  div:last-of-type {
+    padding-left: 10px;
+  }
 }
