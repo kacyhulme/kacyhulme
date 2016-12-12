@@ -30,6 +30,7 @@ h2 {
 .portfolio-page-wrapper {
   @include radial-gradient($background-color-dark, $background-color-light); 
   font-family: $font-family-1;
+  padding-top: 20px;
 }
 
 .btnbottom {
