@@ -6,8 +6,10 @@
   height: 1200px;
   background-color: white;
   font-family: $font-family-1;
-  margin-top: 20px;
+  margin: 50px;
+}
 
+.js-intro {
   div {
     float: left;
   }
@@ -17,4 +19,8 @@
   div:last-of-type {
     padding-left: 10px;
   }
+}
+
+#example-text-input {
+  color: lightgrey;
 }

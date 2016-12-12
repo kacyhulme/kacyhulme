@@ -9,16 +9,6 @@ $(window).load(function() {
   });
 });
 
-$(".modal-button").hide();  
-
-$(".click-me-button").click(function() {
-  $(".welcome-div").toggle();
-  $(".show-directions-button").toggle();
-  $(".description-div").toggle();  
-  $(".modal-button").toggle();  
-})
-
-
 
 
 
