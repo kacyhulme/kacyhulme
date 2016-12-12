@@ -1,9 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
-a {
-  color: white;
-}
+// a {
+//   color: white;
+// }
 
 .css-fun-page-wrapper {
   height: 1200px;
@@ -21,7 +21,6 @@ a {
   display: none;
   width: auto;
   text-align: center;
-  //border: 2px solid $background-color-dark;
   margin: 120px 50px 0 0;
   padding-top: 5px;
   background-color: $accent-color-second;
@@ -47,17 +46,23 @@ a {
 
 .pulse {
   margin: 50px auto;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  animation: pulse 5s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% {
-    background-color: white;
+    background-color: $background-color-light;
+  }
+  25% {
+    @include radial-gradient($accent-color-second, $background-color-light);
+  }
+  50% {
+    @include radial-gradient($accent-color-second, $background-color-light);
   }
   100% {
-    background-color: $accent-color-second;
+    @include radial-gradient($accent-color-second, $background-color-light);
   }
 }
 
@@ -66,7 +71,6 @@ a {
   width: 250px;
   margin: 100px auto;
   text-align: center;
-  //background-color: purple;
   animation-name: stretch;
   animation-duration: 1.5s; 
   animation-timing-function: ease-out; 

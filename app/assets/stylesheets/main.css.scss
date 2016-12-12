@@ -1,9 +1,22 @@
-
 @import 'mixins';
 @import 'variables';
-@import 'thumbnail';
-@import 'cssfun';
-@import 'jsfun';
+
+
+a:link {
+  color: darkblue;
+}
+
+a:visited {
+  color: $background-color-dark;
+}
+
+a:hover {
+  color: $border-color;
+}
+
+a:active {
+  color: $background-color-dark;
+}
 
 h2 {
   text-align: center;
@@ -15,7 +28,7 @@ h2 {
 }
 
 .portfolio-page-wrapper {
-  @include radial-gradient($background-color-light, $background-color-dark); 
+  @include radial-gradient($background-color-dark, $background-color-light); 
   font-family: $font-family-1;
 }
 

@@ -5,5 +5,5 @@
 
 @mixin radial-gradient($fromColor, $toColor) {
   background-color: $fromColor;
-  background: -webkit-radial-gradient(top left, circle cover, $fromColor 0%, $toColor 100%);
+  background: -webkit-radial-gradient(center, circle cover, $fromColor 0%, $toColor 100%);
 }
