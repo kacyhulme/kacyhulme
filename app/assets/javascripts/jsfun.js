@@ -1,5 +1,8 @@
 var transformName = function(name) {
-  alert(name);
+  for (var i = 0, len = name.length; i < len; i++) {
+   $('.print-name').append(name[i]);
+  }
+
 }
 
 var getUserName = function() {
