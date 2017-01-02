@@ -63,3 +63,8 @@ h2 {
   height: 200px;
   width: 350px; 
 }
+
+.myprojects > .cells > div {
+  border-bottom: 1px solid $accent-color-first;
+  padding: 2.5px;
+}
