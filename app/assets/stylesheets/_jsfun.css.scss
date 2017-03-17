@@ -3,10 +3,9 @@
 
 
 .js-fun-page-wrapper {
-  height: 1200px;
   background-color: white;
   font-family: $font-family-1;
-  margin: 50px;
+  padding: 20px;
 }
 
 .js-intro {
@@ -14,9 +13,11 @@
     float: left;
   }
   div:first-of-type {
+    float: left;
     padding-top: 5px;
   }
   div:last-of-type {
+    float: left;
     padding-left: 10px;
   }
 }

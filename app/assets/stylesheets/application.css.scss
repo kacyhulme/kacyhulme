@@ -15,10 +15,14 @@
  */
 
 
-@import "bootstrap";
-@import "main";
-@import "mixins";
-@import "variables";
-@import "thumbnail";
-@import "cssfun";
-@import "jsfun";
+ @import "bootstrap";
+ @import "main";
+ @import "mixins";
+ @import "variables";
+ @import "thumbnail";
+ @import "cssfun";
+ @import "jsfun";
+
+ html, body {
+  height:100%;
+ }
