@@ -226,9 +226,19 @@
 }
 
 .small-boxes {
+  box-sizing: content-box;
   width: 100px; margin: 10px; 
   height: 100px; 
   border: 3px solid black; 
   float: left;
+  background-color: $background-color-light;
+  position: relative;
+}
+
+svg { 
+  position: absolute;
+  // left: 0px;
+  // top: 0px;
+  z-index: 2;
 }
 
