@@ -202,3 +202,33 @@
 .close {
   margin: 8px 10px 2px 2px
 }
+
+.clear {
+  clear: both;
+}
+
+.big-box-wrapper {
+  margin-top: 1250px; 
+  background-color: red;
+}
+
+.big-boxes {
+  border: 1px black solid; 
+  width: 30%; 
+  float: left; 
+  margin: 20px; 
+  padding: 20px;
+}
+
+.small-box-wrapper {
+  border: 2px solid orange; 
+  background-color: purple;
+}
+
+.small-boxes {
+  width: 100px; margin: 10px; 
+  height: 100px; 
+  border: 3px solid black; 
+  float: left;
+}
+
