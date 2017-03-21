@@ -3,7 +3,7 @@
 
 
 .js-fun-page-wrapper {
-  background-color: white;
+  background-color: $background-color-light;
   font-family: $font-family-1;
   padding: 20px;
 }
@@ -20,4 +20,8 @@
     float: left;
     padding-left: 10px;
   }
+}
+
+.row.print-name {
+  font-size: 3em;
 }
