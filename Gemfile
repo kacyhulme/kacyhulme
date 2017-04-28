@@ -47,5 +47,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'puma'
 
+gem "react_on_rails", "~> 6"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
