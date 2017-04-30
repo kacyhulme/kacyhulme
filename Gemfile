@@ -2,12 +2,13 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '5.0.0'
+# use: ruby-2.3.0@kacywebsite-rails5.0
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
   gem 'pry-rails'
-  gem 'quiet_assets'
   gem 'byebug'
 end
 
@@ -17,14 +18,14 @@ group :production do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-sass', '~> 3.2.0.1'
+gem 'sass-rails'
+gem 'bootstrap-sass'
 gem "autoprefixer-rails"
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -33,21 +34,22 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 
-gem 'rake', '~> 10.4.2'
+gem 'rake'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sdoc'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 gem 'puma'
 
-gem "react_on_rails", "~> 6"
+gem 'react-rails'
+gem 'babel-source'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
