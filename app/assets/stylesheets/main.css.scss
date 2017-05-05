@@ -68,3 +68,51 @@ h2 {
   border-bottom: 1px solid $accent-color-first;
   padding: 2.5px;
 }
+
+
+
+/*react styling*/
+
+html, body {
+  background-color: white !important;
+  font-family: $font-family-2;
+  background-image: url("skullimage.png");
+  background-repeat: repeat;
+}
+
+.flex-box-outer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.flex-box-outer > div {
+  border: 1px solid #7e7e7e;
+  box-shadow: 0px 0px 40px 10px #888888 inset ;
+  border-radius: 4px;
+/*  background-color: #66bcec;*/
+  height: 20em;
+  width: 30em;
+  margin: .5em;
+  font-family: $font-family-1;
+  padding: 2.5em;
+  background-color: white;
+}
+
+.header {
+  height: 4em;
+  font-size: 5em;
+  text-shadow: 2px 2px #a8a8a8;
+  padding-top: 1em;
+  background-color: white;
+  margin:.5em;
+}
+
+.flex-box-outer > div:nth-child(4n+1) {
+  box-shadow: none;
+  border:none;
+  background-color: none;
+}
+
+

@@ -6,7 +6,7 @@ $(document).ready(function() {
     type: 'GET',
     dataType: 'json',
     success: function(data) { console.log(data); },
-    error: function() { alert('boo!'); },
+    //error: function() { alert('boo!'); },
     beforeSend: setHeader
   });
 });
