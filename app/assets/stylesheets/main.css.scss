@@ -75,48 +75,47 @@ h2 {
 
 html, body {
   font-family: $font-family-2;
+  background-color: #b55f63 !important;
+  color: #a87672;
 }
 
-.flex-box-outer {
+
+.mainbody {
+ font-size: 12px;
+ position: relative;
+ opacity: .5;
+ z-index: 1;
+}
+
+.overlay {
+  color: black;
+  margin-top: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background: transparent;
+  height: 100%;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: center;
-  background-image: url('skullimage.png');
-  background-repeat: repeat;
+  align-items: stretch;
 }
 
-.flex-box-outer > div {
-  border: 1px solid #7e7e7e;
-  box-shadow: 0px 0px 40px 10px #888888 inset ;
-  border-radius: 4px;
-  height: 20em;
-  width: 30em;
-  margin: .5em;
-  font-family: $font-family-1;
-  padding: 2.5em;
-  background-color: white;
+.overlay > div {
+  height: 200px;
+  margin-bottom: 3px;
 }
 
-.header {
-  height: 6em;
-  font-size: 5em;
-  text-shadow: 2px 2px #a8a8a8;
-  padding-top: 1em;
-  background-color: white;
+.innerdiv {
+  border: .5px solid black;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  background-color: #FAEBD7; /*antique white*/
+  margin-right: 2px;
+  vertical-align: middle;
 }
 
-.flex-box-outer > div:nth-child(2n+2) {
-  box-shadow: none;
-  border:none;
-  background-color: transparent;
-}
 
-.kacypic {
-  background-size: cover;
-  height: 15em;
-  width: 25em;
-  padding-top: 16px;
-  background-image:url('kacypic4_smaller.jpg');
-}
 
