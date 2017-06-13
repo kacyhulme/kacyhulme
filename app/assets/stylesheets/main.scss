@@ -87,7 +87,7 @@ html, body {
  z-index: 1;
 }
 
-.overlay {
+.overlay, .overlay > div {
   color: black;
   margin-top: 30px;
   position: absolute;
