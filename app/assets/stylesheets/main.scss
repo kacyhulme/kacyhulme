@@ -71,7 +71,7 @@ h2 {
 
 
 
-/*react styling*/
+/*react styling*/ 
 
 html, body {
   font-family: $font-family-2;
@@ -80,14 +80,16 @@ html, body {
 }
 
 
-.mainbody {
- font-size: 12px;
- position: relative;
- opacity: .5;
- z-index: 1;
-}
+  .mainbody {
+   font-size: 12px;
+   position: relative;
+   opacity: .5;
+   z-index: 1;
+   text-align: center;
+   width: 100vw;
+  }
 
-.overlay, .overlay > div   {
+.overlay   {
   color: black;
   margin-top: 30px;
   position: absolute;
@@ -96,16 +98,16 @@ html, body {
   background: transparent;
   height: 100%;
   width: 100vw;
-  display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
 }
 
-.overlay > div {
+/*.overlay > div {
   height: 200px;
   margin-bottom: 3px;
-}
+}*/
 
 .innerdiv {
   font-family: $font-family-1;
@@ -127,6 +129,5 @@ html, body {
 
 .headshot img{
   height: 13em;
-
 }
 
