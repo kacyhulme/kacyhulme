@@ -16,7 +16,7 @@ class App extends React.Component {
 class Overlay extends React.Component {
   _createLinkTag(theurl, text) {
     return(
-      <div><a href={theurl}>{text}</a></div>
+      <div><i className="fa fa-asterisk" aria-hidden="true"></i><a href={theurl}>{text}</a></div>
       )
   }
 
@@ -25,7 +25,7 @@ class Overlay extends React.Component {
       <div>
       <h3>React Examples</h3>
       {this._createLinkTag("https://github.com/kacyhulme/animal-rescue","Example React App")}
-      <p>This Page is Built in React!</p>
+      <p><i className="fa fa-asterisk" aria-hidden="true"></i>This Page is Built in React!</p>
       </div>
       )
   }
@@ -79,6 +79,13 @@ class Overlay extends React.Component {
       ) 
   }
 
+  _createDiagLines() {
+    return(
+      <div className="diagline">
+      </div>
+      )
+  }
+
   render() {
 
     var numOfDivs = 24;
@@ -109,7 +116,11 @@ class Overlay extends React.Component {
       else if(i == 6) {
         content = this._createPythonProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }                                 
+      } 
+      else if((i == 7)|| (i == 11) || (i == 12) || (i == 16) || (i == 18) || (i == 23)) {
+        content = this._createDiagLines();
+        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+      }                                              
       else {
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
