@@ -30,13 +30,31 @@ class Overlay extends React.Component {
       )
   }
 
-  _createContent() {
+  _createProjectList() {
     return (
       <div>
-    // this._createLinkTag("https://github.com/kacyhulme/animal-rescue","Example React App")
-    // this._createLinkTag("https://shielded-ravine-94683.herokuapp.com","Live Heatmap")
-    </div>
-    )
+      {this._createLinkTag("https://github.com/kacyhulme/animal-rescue","Example React App")}
+      {this._createLinkTag("https://shielded-ravine-94683.herokuapp.com","Live Heatmap")}
+      {this._createLinkTag("https://github.com/kacyhulme/heatwave","Heatmap Code")}
+      {this._createLinkTag("https://github.com/kacyhulme/farm_sanctuary","Angular Code")}
+      {this._createLinkTag("https://github.com/kacyhulme/javascript_graffiti","jQuery, Bootstrap, Sass, Node")}
+      {this._createLinkTag("https://floating-tundra-8531.herokuapp.com","Live HTML Canvas")}
+      {this._createLinkTag("https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py","Python Scrapy")}
+      {this._createLinkTag("https://github.com/kacyhulme/grocerygame/blob/master/pygame.py","Python All the Things")}
+      {this._createLinkTag("/samples/cssfun","Just Some CSS Fun (WIP)")}
+      {this._createLinkTag("/samples/jsfun","Just Some JS Fun (WIP)")}
+
+
+      </div>
+      )
+  }
+
+  _createContactInfo() {
+    return(
+      <div>
+      <div><div>KHW</div></div><div><a href="mailto:kacy.hulme@gmail.com">EM</a></div><div><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing">RMR</a></div>
+      </div>
+      )
   }
 
   render() {
@@ -47,17 +65,17 @@ class Overlay extends React.Component {
     for(i=0; i< numOfDivs; i++) {
       let content = "";
       if(i == 0){
-        content = <div><div><div>KHW</div></div><div><a href="mailto:kacy.hulme@gmail.com">EM</a></div><div><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing">RMR</a></div></div>
+        content = this._createContactInfo();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
       else if(i == 2) {
-        content = this._createContent();
+        content = this._createProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }
+      }     
       else if(i == 3) {
-        content = this._createContent();
+        content = this._createLinkTag("https://github.com/kacyhulme/farm_sanctuary","Angular Code");
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }       
+      }         
       else {
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
