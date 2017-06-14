@@ -116,9 +116,17 @@ html, body {
   background-color: #FAEBD7; /*antique white*/
   margin-right: 2px;
   vertical-align: middle;
-  padding: 20px;
-  font-size: 0.5em;
+  padding: 10px;
+  font-size: 0.95em;
 }
 
+.innerdiv h3 {
+  font-family: $font-family-2;
+  font-size: 2em;
+}
 
+.headshot img{
+  height: 13em;
+
+}
 
