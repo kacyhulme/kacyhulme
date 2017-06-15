@@ -152,9 +152,9 @@ a:active {
   font-size: 3.3em;
 }
 
-.headshot img {
+/*.headshot img {
   height: 13em;
-}
+}*/
 
 .linkdiv {
   line-height: 1.75em;
@@ -177,41 +177,52 @@ a:active {
   }
 }
 
-  /*
-.diagline {
+
+/*.diagline {
   width: 100%;
   height: 100%;
   position: relative;
   background: repeating-linear-gradient(
     45deg,
-    #c17a7d ,
-    #c17a7d  5px,
-    transparent 5px,
+     #FAEBD7,
+    #c17a7d 12px,
+    transparent 15px,
     transparent 10px
     );
 }
 
-.innerdiv:nth-of-type(4), 
-.innerdiv:nth-of-type(6), 
-.innerdiv:nth-of-type(10), 
-.innerdiv:nth-of-type(12), 
-.innerdiv:nth-of-type(14), 
-.innerdiv:nth-of-type(16), 
-.innerdiv:nth-of-type(18),
-.innerdiv:nth-of-type(20),
-.innerdiv:nth-of-type(22),
-.innerdiv:nth-of-type(24),
+.innerdiv:nth-of-type(1), 
+.innerdiv:nth-of-type(3), 
+
 {
   background-color: none !important;
   padding: inherit !important;
   background: none;
-  border: 1px solid #FAEBD7;
-  }*/
-
-/*.innerdiv {
-  background-image: url("stacked_circles_med.png");
+  border: none;
+}*/
+/*
+.innerdiv {
+  background-image: url("topography.png");
   background-repeat: repeat;
   background-attachment:fixed;
-}
-*/
+}*/
 
+.innerdiv:nth-of-type(1) {
+  background-image: url("calimap.jpg");
+  background-position: 3% 45%;
+  background-size: 300%;
+}
+
+.innerdiv:nth-of-type(3) {
+  background-image: url("detroit.jpg");
+  background-position: 96% 97%;
+  background-size: 125%;
+}
+
+.headshot {
+  background-image: url("headshot.jpg");
+  background-position: 50% 30%;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  height: 15em;
+}

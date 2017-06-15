@@ -84,7 +84,7 @@ class Overlay extends React.Component {
       <div className="socialmedia">
       <h3>Find me</h3>
       {this._createLinkTag("https://www.instagram.com/healthyforreal/","Instagram")}
-      {this._createLinkTag("https://healthyforreal.com/","My Blog")}
+      {this._createLinkTag("https://healthyforreal.com/","My Healthy Food Blog")}
       {this._createLinkTag("https://twitter.com/kacyhulme","Twitter")}
       {this._createLinkTag("https://www.facebook.com/healthyforreal/","Facebook")}
       </div>
@@ -94,7 +94,7 @@ class Overlay extends React.Component {
   _createImageDiv() {
     return ( 
       <div className="headshot">
-      <%= image_tag("kacypic.jpg") %>
+      
       </div>
       ) 
   }
@@ -145,10 +145,10 @@ class Overlay extends React.Component {
         content = this._createPythonProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-//      else if((i == 3) || (i == 5) || (i == 9) || (i == 11) || (i == 13) || (i == 15) || (i == 17) || (i == 19) || (i == 21) || (i == 23)) {
-//        content = this._createDiagLines();
-//        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-//      }                                              
+      else if((i == 0) || (i == 2)) {
+        content = this._createDiagLines();
+        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+      }                                              
 else {
   allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
 }
