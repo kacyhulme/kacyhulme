@@ -25,7 +25,7 @@ class Overlay extends React.Component {
       <div>
       <h3>React Examples</h3>
       {this._createLinkTag("https://github.com/kacyhulme/animal-rescue","Example React App")}
-      <p><em>This Page is Built in React!</em></p>
+      {this._createLinkTag("https://github.com/kacyhulme/kacyhulme/blob/master/app/assets/javascripts/components/helloworld.jsx.erb","This Page is Built in React!")}
       </div>
       )
   }
@@ -63,10 +63,30 @@ class Overlay extends React.Component {
       )
   }
 
-  _createContactInfo() {
+  _createNameInfo() {
     return(
       <div>
-      <div><h3>KHW</h3></div><div><a href="mailto:kacy.hulme@gmail.com">EM</a></div><div><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing">RMR</a></div>
+      <div><h3>Kacy</h3><h3>Hulme</h3><h3>Wendling</h3></div>
+      </div>
+      )
+  }
+  _createContactInfo() {
+    return(
+      <div className="contactinfo">
+      <h3>Contact me</h3>
+      <div className="linkdiv"><a href="mailto:kacy.hulme@gmail.com">Email Me</a></div><div className="linkdiv"><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing">Read My Resume</a></div>
+      </div>
+      )
+  }
+
+  _createSocialMedia() {
+    return(
+      <div className="socialmedia">
+      <h3>Find me</h3>
+      {this._createLinkTag("https://www.instagram.com/healthyforreal/","Instagram")}
+      {this._createLinkTag("https://healthyforreal.com/","My Blog")}
+      {this._createLinkTag("https://twitter.com/kacyhulme","Twitter")}
+      {this._createLinkTag("https://www.facebook.com/healthyforreal/","Facebook")}
       </div>
       )
   }
@@ -88,20 +108,28 @@ class Overlay extends React.Component {
 
   render() {
 
-    var numOfDivs = 24;
+    var numOfDivs = 12;
     var allDivs = [];
 
     for(i=0; i< numOfDivs; i++) {
       let content = "";
-      if(i == 1){
+      if(i == 3){
         content = this._createContactInfo();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
+      else if(i == 0){
+        content = this._createNameInfo();
+        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+      }
+      else if(i == 5) {
+        content = this._createSocialMedia();
+        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+      }       
       else if(i == 4) {
         content = this._createImageDiv();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if(i == 6) {
+      else if(i == 10) {
         content = this._createReactProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }     
@@ -109,11 +137,11 @@ class Overlay extends React.Component {
         content = this._createJavaScriptProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if(i == 8) {
+      else if(i == 6) {
         content = this._createFunProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }   
-      else if(i == 10) {
+      else if(i == 8) {
         content = this._createPythonProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
@@ -121,18 +149,18 @@ class Overlay extends React.Component {
 //        content = this._createDiagLines();
 //        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
 //      }                                              
-      else {
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }
-    }
-    return (
-      <div className="overlay">
-      
-      {allDivs}
-      
-      </div>
-      )
-  }
+else {
+  allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+}
+}
+return (
+  <div className="overlay">
+
+  {allDivs}
+
+  </div>
+  )
+}
 }
 
 class InnerDiv extends React.Component {

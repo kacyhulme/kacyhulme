@@ -117,7 +117,7 @@ a:active {
 
 .overlay   {
   color: #573650; /*http://www.color-hex.com/color/7d4e73*/
-  margin-top: 30px;
+  margin-top: 4.1em;
   position: absolute;
   top: 0;
   z-index: 2;
@@ -144,9 +144,14 @@ a:active {
 }
 
 .innerdiv h3 {
-  font-family: $font-family-2;
-  font-size: 2em;
+  font-family: $font-family-3;
+  text-transform: uppercase;
+  font-size: 1.8em;
   margin-top: 10px;
+}
+
+.innerdiv:nth-of-type(1) h3{
+  font-size: 3.3em;
 }
 
 .headshot img {
@@ -156,6 +161,14 @@ a:active {
 .linkdiv {
   line-height: 1.75em;
 }
+
+.socialmedia {
+
+}
+
+.contactinfo {
+}
+
 /*
 .diagline {
   width: 100%;
@@ -187,9 +200,10 @@ a:active {
   border: 1px solid #FAEBD7;
 }*/
 
-.innerdiv {
-  background-image: url('stacked_circles_med.png');
+/*.innerdiv {
+  background-image: url("stacked_circles_med.png");
   background-repeat: repeat;
+  background-attachment:fixed;
 }
-
+*/
 
