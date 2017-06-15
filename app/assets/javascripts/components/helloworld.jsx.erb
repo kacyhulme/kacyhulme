@@ -66,7 +66,7 @@ class Overlay extends React.Component {
   _createNameInfo() {
     return(
       <div>
-      <div><h3>Kacy</h3><h3>Hulme</h3><h3>Wendling</h3></div>
+      <div><h3>Kacy</h3><h3>Hulme-</h3><h3>Wendling</h3></div>
       </div>
       )
   }
@@ -117,7 +117,7 @@ class Overlay extends React.Component {
         content = this._createContactInfo();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
-      else if(i == 0){
+      else if(i == 1){
         content = this._createNameInfo();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }

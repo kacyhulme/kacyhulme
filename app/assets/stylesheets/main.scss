@@ -1,6 +1,6 @@
 @import 'mixins';
 @import 'variables';
-
+/*
 
 a:link {
   color: darkblue;
@@ -69,7 +69,7 @@ h2 {
   padding: 2.5px;
 }
 
-
+*/
 
 /*react styling*/ 
 
@@ -88,22 +88,22 @@ html, body {
 /*mexican sunset: http://www.color-hex.com/color-palette/37865*/
 /* unvisited link */
 a:link {
-    color: #7d4e73;
+  color: #7d4e73;
 }
 
 /* visited link */
 a:visited {
-    color: #bc6972;
+  color: #bc6972;
 }
 
 /* mouse over link */
 a:hover {
-    color: #dc7772;
+  color: #dc7772;
 }
 
 /* selected link */
 a:active {
-    color: #bc6972;
+  color: #bc6972;
 }
 
 .mainbody {
@@ -122,7 +122,6 @@ a:active {
   top: 0;
   z-index: 2;
   background: transparent;
-  height: 100%;
   width: auto;
   display: -webkit-flex;
   flex-wrap: wrap;
@@ -133,11 +132,10 @@ a:active {
 .innerdiv {
   font-family: $font-family-1;
   border: 1px solid #fbf1e3; /*or maybe use #fcf3e7*/
-  height: 200px;
-  width: 400px;
+  height: 15em;
+  width: 30em;
   text-align: center;
   background-color: #FAEBD7; /*antique white*/
-  /*margin: 1px;*/
   vertical-align: middle;
   padding: 10px;
   font-size: 1em;
@@ -150,7 +148,7 @@ a:active {
   margin-top: 10px;
 }
 
-.innerdiv:nth-of-type(1) h3{
+.innerdiv:nth-of-type(2 ) h3{
   font-size: 3.3em;
 }
 
@@ -169,7 +167,17 @@ a:active {
 .contactinfo {
 }
 
-/*
+
+
+@media only screen and (max-width: 992px) {
+  .innerdiv {
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 25em;
+  }
+}
+
+  /*
 .diagline {
   width: 100%;
   height: 100%;
@@ -198,7 +206,7 @@ a:active {
   padding: inherit !important;
   background: none;
   border: 1px solid #FAEBD7;
-}*/
+  }*/
 
 /*.innerdiv {
   background-image: url("stacked_circles_med.png");
