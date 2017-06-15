@@ -76,7 +76,7 @@ h2 {
 html, body {
   font-family: $font-family-2;
   background-color: #b55f63 !important;
-  color: #a87672;
+  color: #B08380;
 }
 
 .fa {
@@ -131,7 +131,7 @@ html, body {
   height: 13em;
 }
 
-.diagline {
+/*.diagline {
   width: 100%;
   height: 100%;
   position: relative;
@@ -149,5 +149,11 @@ html, body {
   padding: inherit !important;
   background: none;
   border: none;
-}
+}*/
 
+/*.innerdiv:nth-child(odd) {
+  background-color: none !important;
+  padding: inherit !important;
+  background: none;
+  border: none;
+}*/

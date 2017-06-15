@@ -93,34 +93,34 @@ class Overlay extends React.Component {
 
     for(i=0; i< numOfDivs; i++) {
       let content = "";
-      if(i == 0){
+      if(i == 1){
         content = this._createContactInfo();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
-      else if(i == 1) {
+      else if(i == 4) {
         content = this._createImageDiv();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if(i == 3) {
+      else if(i == 6) {
         content = this._createReactProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }     
-      else if(i == 4) {
+      else if(i == 7) {
         content = this._createJavaScriptProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if(i == 5) {
+      else if(i == 8) {
         content = this._createFunProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }   
-      else if(i == 6) {
+      else if(i == 9) {
         content = this._createPythonProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if((i == 7)|| (i == 11) || (i == 12) || (i == 16) || (i == 18) || (i == 23)) {
-        content = this._createDiagLines();
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }                                              
+      // else if((i == 7)|| (i == 11) || (i == 12) || (i == 16) || (i == 18) || (i == 23)) {
+      //   content = this._createDiagLines();
+      //   allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+      // }                                              
       else {
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
