@@ -16,7 +16,7 @@ class App extends React.Component {
 class Overlay extends React.Component {
   _createLinkTag(theurl, text) {
     return(
-      <div><a href={theurl}>{text}</a></div>
+      <div className="linkdiv"><a href={theurl}>{text}</a></div>
       )
   }
 
@@ -25,7 +25,7 @@ class Overlay extends React.Component {
       <div>
       <h3>React Examples</h3>
       {this._createLinkTag("https://github.com/kacyhulme/animal-rescue","Example React App")}
-      <p>This Page is Built in React!</p>
+      <p><em>This Page is Built in React!</em></p>
       </div>
       )
   }

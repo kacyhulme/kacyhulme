@@ -85,6 +85,26 @@ html, body {
   vertical-align: middle;
 }
 
+/* unvisited link */
+a:link {
+    color: #1ca515;
+}
+
+/* visited link */
+a:visited {
+    color: #7eab7c;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6ecc6a;
+}
+
+/* selected link */
+a:active {
+    color: #11cc09;
+}
+
 .mainbody {
  font-size: 16px;
  position: relative;
@@ -95,7 +115,7 @@ html, body {
 }
 
 .overlay   {
-  color: black;
+  color: #323232;
   margin-top: 30px;
   position: absolute;
   top: 0;
@@ -129,6 +149,10 @@ html, body {
 
 .headshot img {
   height: 13em;
+}
+
+.linkdiv {
+  line-height: 1.75em;
 }
 
 /*.diagline {
