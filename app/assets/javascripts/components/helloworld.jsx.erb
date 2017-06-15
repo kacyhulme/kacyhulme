@@ -79,12 +79,12 @@ class Overlay extends React.Component {
       ) 
   }
 
-  // _createDiagLines() {
-  //   return(
-  //     <div className="diagline">
-  //     </div>
-  //     )
-  // }
+  _createDiagLines() {
+    return(
+      <div className="diagline">
+      </div>
+      )
+  }
 
   render() {
 
@@ -113,14 +113,14 @@ class Overlay extends React.Component {
         content = this._createFunProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }   
-      else if(i == 9) {
+      else if(i == 10) {
         content = this._createPythonProjectList();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      // else if((i == 7)|| (i == 11) || (i == 12) || (i == 16) || (i == 18) || (i == 23)) {
-      //   content = this._createDiagLines();
-      //   allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      // }                                              
+//      else if((i == 3) || (i == 5) || (i == 9) || (i == 11) || (i == 13) || (i == 15) || (i == 17) || (i == 19) || (i == 21) || (i == 23)) {
+//        content = this._createDiagLines();
+//        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
+//      }                                              
       else {
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }

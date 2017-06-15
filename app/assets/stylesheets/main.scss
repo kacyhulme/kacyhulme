@@ -156,8 +156,8 @@ a:active {
 .linkdiv {
   line-height: 1.75em;
 }
-
-/*.diagline {
+/*
+.diagline {
   width: 100%;
   height: 100%;
   position: relative;
@@ -170,16 +170,26 @@ a:active {
     );
 }
 
-.innerdiv:nth-of-type(8), .innerdiv:nth-of-type(12), .innerdiv:nth-of-type(13), .innerdiv:nth-of-type(17), .innerdiv:nth-of-type(19), .innerdiv:nth-of-type(24) {
+.innerdiv:nth-of-type(4), 
+.innerdiv:nth-of-type(6), 
+.innerdiv:nth-of-type(10), 
+.innerdiv:nth-of-type(12), 
+.innerdiv:nth-of-type(14), 
+.innerdiv:nth-of-type(16), 
+.innerdiv:nth-of-type(18),
+.innerdiv:nth-of-type(20),
+.innerdiv:nth-of-type(22),
+.innerdiv:nth-of-type(24),
+{
   background-color: none !important;
   padding: inherit !important;
   background: none;
-  border: none;
+  border: 1px solid #FAEBD7;
 }*/
 
-/*.innerdiv:nth-child(odd) {
-  background-color: none !important;
-  padding: inherit !important;
-  background: none;
-  border: none;
-}*/
+.innerdiv {
+  background-image: url('stacked_circles_med.png');
+  background-repeat: repeat;
+}
+
+
