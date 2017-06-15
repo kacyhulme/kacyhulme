@@ -111,12 +111,12 @@ html, body {
 
 .innerdiv {
   font-family: $font-family-1;
-  border: .5px solid black;
+  border: 1px solid #fbf1e3; /*or maybe use #fcf3e7*/
   height: 200px;
   width: 400px;
   text-align: center;
   background-color: #FAEBD7; /*antique white*/
-  margin: 5px;
+  /*margin: 1px;*/
   vertical-align: middle;
   padding: 10px;
   font-size: 0.95em;
