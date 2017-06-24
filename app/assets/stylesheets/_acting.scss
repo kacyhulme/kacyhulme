@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'mixins';
+
+#acting {
+  margin: 50px 35px 0px 50px;
+  font-family: $font-family-1; 
+  color: black;
+}
+
+#acting .maincontainer {
+  margin-left: 100px;
+  font-size: 24px;
+}
+
+#acting .maincontainer h2 {
+	font-size: 48px;
+	color: black;
+}
+
+#acting a:link {
+  color: purple;
+}
+
+#acting .image img{
+	width:36em;
+}
+
+#acting .maincontainer .links {
+	margin-bottom: 25px;
+}

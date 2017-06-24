@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "samples/fiction" => "samples#fiction"
   get "samples/cssfun" => "samples#cssfun"
   get "samples/jsfun" => "samples#jsfun"
+  get "acting/contactinfo" => "acting#contactinfo"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :samples
+  resources :acting
 
   # Example resource route with options:
   #   resources :products do
