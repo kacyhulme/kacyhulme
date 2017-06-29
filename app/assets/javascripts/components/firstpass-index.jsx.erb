@@ -1,4 +1,4 @@
-
+//<!-- 
 class App extends React.Component {
   render() {
     return (
@@ -106,6 +106,14 @@ class Overlay extends React.Component {
       )
   }
 
+  _createCategoryHeaders() {
+      return(
+      <div className="categoryheader">
+      <h3>Acting</h3>
+      </div>
+      )
+  }
+
   render() {
 
     var numOfDivs = 12;
@@ -142,7 +150,7 @@ class Overlay extends React.Component {
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }   
       else if(i == 8) {
-        content = this._createPythonProjectList();
+        content = this._createCategoryHeaders();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
       else if((i == 0) || (i == 2)) {
@@ -171,3 +179,4 @@ class InnerDiv extends React.Component {
   }
 }
 
+ -->
