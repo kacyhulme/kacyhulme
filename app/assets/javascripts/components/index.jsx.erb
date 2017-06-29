@@ -41,6 +41,7 @@ class CategoryTiles extends React.Component {
         return(
         <div className="categoryheader">
         <h3>Acting</h3>
+        <Details detailsinfo={num}/>
         </div>
         )
       }
@@ -48,6 +49,7 @@ class CategoryTiles extends React.Component {
         return(
           <div className="categoryheader">
           <h3>Web Development</h3>
+          <Details detailsinfo={num}/>          
           </div>
           )
       }
@@ -55,6 +57,7 @@ class CategoryTiles extends React.Component {
         return(
           <div className="categoryheader">
           <h3>Healthy Food</h3>
+          <Details detailsinfo={num}/>
           </div>
           )
       }
@@ -62,6 +65,7 @@ class CategoryTiles extends React.Component {
         return(
           <div className="categoryheader">
           <h3>Workouts</h3>
+          <Details detailsinfo={num}/>
           </div>
           )
       }
@@ -69,13 +73,14 @@ class CategoryTiles extends React.Component {
         return(
           <div className="categoryheader">
           <h3>Art</h3>
-          <Details />
+          <Details detailsinfo={num}/>
           </div>
           )
       } 
       else {
       return(
           <div className="categoryheader">
+
           </div>
           )
       }
