@@ -96,27 +96,8 @@ class CategoryTiles extends React.Component {
         content = this._createImageDiv();
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       } 
-      else if(i == 3) {
-        content = this._createCategoryHeaders(i);
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }     
-      else if(i == 5) {
-        content = this._createCategoryHeaders(i);
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      } 
-      else if(i == 6) {
-        content = this._createCategoryHeaders(i);
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      }   
-      else if(i == 7) {
-        content = this._createCategoryHeaders(i);
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      } 
-      else if(i == 8) {
-        content = this._createCategoryHeaders(i);
-        allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-      } 
       else {
+        content = this._createCategoryHeaders(i);
         allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
       }
     }
