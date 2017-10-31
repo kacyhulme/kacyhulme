@@ -13,7 +13,7 @@ class App extends React.Component {
 }
 
 class CategoryTiles extends React.Component {
-  
+
   _createLinkTag(theurl, text) {
     return(
       <div className="linkdiv"><a href={theurl}>{text}</a></div>
@@ -24,6 +24,8 @@ class CategoryTiles extends React.Component {
     return(
       <div>
       <div><h3>Kacy</h3><h3>Hulme-</h3><h3>Wendling</h3></div>
+      <div className="linkdiv"><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing" target="_blank">Read My Resume</a></div>
+      <div className="linkdiv"><a href="mailto:kacy.hulme@gmail.com" target="_top">Email Me</a></div>
       </div>
       )
   }
@@ -36,59 +38,103 @@ class CategoryTiles extends React.Component {
       ) 
   }
 
+  _renderFitnessLinks() {
+
+  }
+
+  _renderFoodLinks() {
+    <div>
+    <div className="linkdiv"><a href="https://healthyforreal.com/">Blog</a></div>     
+    <div className="linkdiv"><a href="https://www.youtube.com/playlist?list=PLfoyjSPjZQRYyRPrhDWkSRkE6ude9ZM6H">Videos</a></div>        
+    <div className="linkdiv"><a href="https://www.instagram.com/healthyforreal/">Instagram</a></div> 
+    <div className="linkdiv"><a href="https://www.facebook.com/healthyforreal/">Facebook</a></div>   
+    </div>
+  }
+  _renderWebDevExamples() {
+    return(
+      <div>
+      <div className="linkdiv"><a href="https://twitter.com/kacyhulme">Twitter</a></div>  
+      <h3>For Fun</h3> 
+      <div className="linkdiv"><a href="/samples/cssfun">Just Some CSS Fun (WIP)</a></div>  
+      <div className="linkdiv"><a href="/samples/jsfun">Just Some JS Fun (WIP)</a></div>  
+
+      <h3>Python</h3> 
+
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py">Python Scrapy</a></div>  
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/grocerygame/blob/master/pygame.py">Python All the Things</a></div>  
+
+      <h3>JavaScript</h3> 
+
+      <div className="linkdiv"><a href="https://shielded-ravine-94683.herokuapp.com">Live Heatmap</a></div>  
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/heatwave">Heatmap Code</a></div>  
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/javascript_graffiti">jQuery, Bootstrap, Sass, Node</a></div>  
+      <div className="linkdiv"><a href="https://floating-tundra-8531.herokuapp.com">Live HTML Canvas</a></div>  
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/farm_sanctuary">Angular</a></div>  
+
+      <h3>React</h3> 
+
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/animal-rescue">Example React App</a></div>  
+      <div className="linkdiv"><a href="https://github.com/kacyhulme/kacyhulme/blob/master/app/assets/javascripts/components/helloworld.jsx.erb">This Page is Built in React!</a></div>  
+
+      <Details detailsinfo={num}/>  
+      </div>
+      )   
+
+  }
+
   _createCategoryHeaders(num) {
-      if(num == 5) {
-        return(
+    if(num == 5) {
+      return(
         <div className="categoryheader">
         <h3>Acting</h3>
-        <Details detailsinfo={num}/>
+        <div className="linkdiv"><a href="/acting" target="_blank">Reel, Headshot, Bio</a></div>
         </div>
         )
-      }
-      else if(num == 3) {
-        return(
-          <div className="categoryheader">
-          <h3>Web Development</h3>
-          <Details detailsinfo={num}/>          
-          </div>
-          )
-      }
-      else if(num == 6) {
-        return(
-          <div className="categoryheader">
-          <h3>Healthy Food</h3>
-          <Details detailsinfo={num}/>
-          </div>
-          )
-      }
-      else if(num == 7) {
-        return(
-          <div className="categoryheader">
-          <h3>Workouts</h3>
-          <Details detailsinfo={num}/>
-          </div>
-          )
-      }
-      else if(num == 8) {
-        return(
-          <div className="categoryheader">
-          <h3>Art</h3>
-          <Details detailsinfo={num}/>
-          </div>
-          )
-      } 
-      else {
+    }
+    else if(num == 3) {
       return(
-          <div className="categoryheader">
-
-          </div>
-          )
-      }
+        <div className="categoryheader">
+        <h3>Web Development</h3>
+        <div className="linkdiv"><a href="https://drive.google.com/file/d/0B6GaVaktfq5MRXBMMmt5emxZSUU/view?usp=sharing" target="_blank">Current Portfolio</a></div>
+        <div className="linkdiv"><a href="/samples" target="_blank">More Examples and Apps</a></div>
+        </div>
+        )
+    }
+    else if(num == 6) {
+      return(
+        <div className="categoryheader">
+        <h3>Healthy Food</h3>     
+        <div className="linkdiv"><a href="https://healthyforreal.com/" target="_blank">Blog</a></div>
+        </div>
+        )
+    }
+    else if(num == 7) {
+      return(
+        <div className="categoryheader">
+        <h3>Fitness</h3>
+        <p>Coming Soon!</p>
+        </div>
+        )
+    }
+    else if(num == 8) {
+      return(
+        <div className="categoryheader">
+        <h3>Art</h3>
+        <p>Coming Soon!</p>
+        </div>
+        )
+    } 
+    else {
+      return(
+        <div className="categoryheader">
+        </div>
+        )
+    }
   }
 
   render() {
 
-    var numOfDivs = 12;
+    var numOfDivs = 9;
     var allDivs = [];
 
     for(i=0; i< numOfDivs; i++) {
@@ -107,14 +153,14 @@ class CategoryTiles extends React.Component {
       }
     }
 
-return (
-  <div className="categorytiles">
+    return (
+      <div className="categorytiles">
 
-  {allDivs}
+      {allDivs}
 
-  </div>
-  )
-}
+      </div>
+      )
+  }
 }
 
 class InnerDiv extends React.Component {

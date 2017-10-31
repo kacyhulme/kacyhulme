@@ -1,75 +1,5 @@
 @import 'mixins';
 @import 'variables';
-/*
-
-a:link {
-  color: darkblue;
-}
-
-a:visited {
-  color: $background-color-dark;
-}
-
-a:hover {
-  color: $border-color;
-}
-
-a:active {
-  color: $background-color-dark;
-}
-
-h2 {
-  text-align: center;
-  font-family: $font-family-2;
-}
-
-.container.body {
-  margin-top: 20px;
-}
-
-.portfolio-page-wrapper {
-  @include radial-gradient($background-color-dark, $background-color-light); 
-  font-family: $font-family-1;
-  padding-top: 20px;
-}
-
-.btnbottom {
-  margin-bottom: 4px;
-  background: $accent-color-second;
-}
-
-@media only screen and (max-width: 1600px) {
-  .pic-header p {
-    text-align: center;
-    background-color: lighten($background-color-dark, 20%);
-    border-radius: 6px;
-    padding: 30px 10px 10px 10px;
-    margin: 0 15px 0 80px;
-    height: 150px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .pic-header {
-    max-height: 25%;
-    margin: 0 58px 10px 0;
-    clear: both;
-  }
-}
-
-.img-style {
-  padding-top: 20px;
-  padding-bottom: 20px; 
-  height: 200px;
-  width: 350px; 
-}
-
-.myprojects > .cells > div {
-  border-bottom: 1px solid $accent-color-first;
-  padding: 2.5px;
-}
-
-*/
 
 /*react styling*/ 
 
@@ -85,23 +15,18 @@ html, body {
   vertical-align: middle;
 }
 
-/*mexican sunset: http://www.color-hex.com/color-palette/37865*/
-/* unvisited link */
 a:link {
   color: #7d4e73;
 }
 
-/* visited link */
 a:visited {
   color: #bc6972;
 }
 
-/* mouse over link */
 a:hover {
   color: #dc7772;
 }
 
-/* selected link */
 a:active {
   color: #bc6972;
 }
@@ -132,10 +57,11 @@ a:active {
 .innerdiv {
   font-family: $font-family-1;
   border: 1px solid #fbf1e3; /*or maybe use #fcf3e7*/
-  height: 15em;
-  width: 30em;
+  height: 18em;
+  width: 20em;
+  margin: 5px;
   text-align: center;
-  background-color: #FAEBD7; /*antique white*/
+  background-color: $antique-white; /*antique white*/
   vertical-align: middle;
   padding: 10px;
   font-size: 1em;
@@ -149,25 +75,13 @@ a:active {
 }
 
 .innerdiv:nth-of-type(2 ) h3{
-  font-size: 3.3em;
+  font-size: 2.3em;
 }
-
-/*.headshot img {
-  height: 13em;
-}*/
 
 .linkdiv {
   line-height: 1.75em;
+  text-decoration: underline;
 }
-
-.socialmedia {
-
-}
-
-.contactinfo {
-}
-
-
 
 @media only screen and (max-width: 992px) {
   .innerdiv {
@@ -176,36 +90,6 @@ a:active {
     width: 25em;
   }
 }
-
-
-/*.diagline {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: repeating-linear-gradient(
-    45deg,
-     #FAEBD7,
-    #c17a7d 12px,
-    transparent 15px,
-    transparent 10px
-    );
-}
-
-.innerdiv:nth-of-type(1), 
-.innerdiv:nth-of-type(3), 
-
-{
-  background-color: none !important;
-  padding: inherit !important;
-  background: none;
-  border: none;
-}*/
-/*
-.innerdiv {
-  background-image: url("topography.png");
-  background-repeat: repeat;
-  background-attachment:fixed;
-}*/
 
 .innerdiv:nth-of-type(1) {
   background-image: image-url("calimap.jpg");
@@ -226,3 +110,4 @@ a:active {
   background-repeat: no-repeat;
   height: 15em;
 }
+
