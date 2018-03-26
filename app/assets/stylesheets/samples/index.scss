@@ -2,24 +2,6 @@
 @import 'mixins';
 
 .sample-wrapper {
-  height: 100%;
-  width: auto;
-  margin: 50px;
-  padding: 50px;
-  background: $antique-white;
-  color: black;
-
-  a:link {
-    color: black;
-    text-decoration: underline;
-  }    
-  a:visited {
-    color: #bc6972;
-  }
-
-  li {
-    font-size: 1.5em;
-    line-height: 40px;
-  }
+  
 }
 
