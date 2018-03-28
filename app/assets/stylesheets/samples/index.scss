@@ -3,25 +3,30 @@
 
 #sample-wrapper {
   .image-card {
+    cursor: pointer;
     margin-bottom: 20px;
     text-align: center;
     img {
       max-width: 260px;
-      max-height: 400px;
+      max-height: 450px;
     }
   }
   .overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
     top: 0; 
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+  }
+  .inner-overlay {
+    border: 1px solid black;
+    margin: 50px;
+  }
 }
 
