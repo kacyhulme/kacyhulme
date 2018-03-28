@@ -8,7 +8,7 @@ $( document ).ready(function() {
     $('.image-card').click(function() {
         $('.overlay').css('display','block');
         var getdataelement = $(this).attr("data-img");
-        $('.inner-overlay').css('background-image','url(portfolio/ao' + getdataelement+'.png)');
+        $('.inner-overlay').css('background-image','url("assets/portfolio/ao' + getdataelement+'.png")');
     });
     $('.overlay').click(function() {
         $(this).css('display','none');
