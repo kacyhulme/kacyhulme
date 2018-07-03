@@ -1,173 +1,21 @@
 class App extends React.Component {
-render() {
-return (
-<div>
-  <div className="mainbody">
-    So serious are the doubts into which I have been thrown as a result of yesterday's meditations that I can neither put them out of my mind nor see any way of resolving them. It feels as if I have fallen unexpectedly into a deep whirlpool which tumbles me around so that I can neither stand on the bottom nor swim up to the top. Nevertheless I will make an effort and once more attempt the same path which I started on yesterday. Anything which admits of the slightest doubt I will set aside just as if I had found it to be wholly false; and I will proceed in this way until I recognize that there is no certainty. Archimedes used to demand just one firm and immovable point in order to shift the entire earth; so I too can hope for great things if I manage to find just one thing, however slight, that is certain and unshakeable.I will suppose then, that everything I see is spurious. I will believe that my memory tells me me lies, and that none of the things that it reports ever happened. I have no senses. Body, shape, extension, movement and place are chimeras. So what remains true? Perhaps just the one fact that nothing is certain.Yet a part from everything I have just listed, how do I know that there is not something else which does not allow even the slightest occasion for doubt? Is there not a God, or whatever I may call him, who puts into me the thoughts I am now having? But why do I think this, since I myself may perhaps be the author of these thoughts? In that case am not I, at least, something? But I have just said that I have no senses and no body. This is the sticking point: what follows from this? Am I not so bound up with a body and with senses that I cannot exist without them? But I have convinced myself that there is absolutely nothing in the world, no sky, no earth, no minds, no bodies. Does it now follow that I too do not exist?No: if I convinced myself of something then I certainly existed. But there is a deceiver of supreme power and cunning who is deliberately and constantly deceiving me. In that are I too undoubtedly , if he is deceiving me; and let him deceive me as much as he can, he will never bring it about that I am nothing so long as I think that I am something. So after considering everything very thoroughly, I must finally conclude that this proposition, I am, I exist, is necessarily true whenever it is put forward by me or conceived in my mind.But I do not yet have a sufficient understanding of what this 'I' is, that now necessarily exists. So I must be on my guard against carelessly taking something else to be this ;I', and so making a mistake in the very item of knowledge that I maintain is the most certain and evident of all. I will therefore go back and meditate on what I originally believed myself to be, before I embarked on this present train of thought. I will then subtract anything capable of being weakened, even minimally, by the arguments now introduced, so that what is left at the end may be exactly and only what is certain and unshakeable.What then did I formerly think I was? A man. but what is a man? Shall I say 'a rational animal'? No; for then I should have to inquire what an animal is, what rationality is, and in this way one question would lead me down the slope to other harder ones, and I do not now have the time to waste on subtleties of this kind. Instead I propose to concentrate on what came into my thoughts spontaneously and quite naturally whenever I used to consider what I was. Well, the first thought to come to mind was that I had a face, hands, arms and the whole mechanical structure of limbs which can be seen in a corpse, and that which I called the body. The next thought was that I was nourished, that I moved about, and that I engaged in sense-perception and thinking; and these actions I attributed to the soul. But as to the nature of this soul, either I did not think about this or else I imagined it to be something tenuous, like a wind or fire or ether, which permeated my more solid parts. As to the body, however, I had no doubts about it, but thought I knew its nature distinctly. If I had expressed it as follows: by a body I understand whatever has a determinable shape and a definable location and can occupy a space in such a way as to exclude any other body; it can be perceived by touch, sight, hearing, taste, or smell, and can be moved in various ways, not by itself but by whatever else comes into contact with it. For, according to my judgement, the power of self-movement, like the power of sensation or of thought, was quite foreign to the nature of a body; indeed, it was a source of wonder to me that certain bodies were found to contain faculties of this kind.But what shall I now say that I am, when I am supposing that there is some supremely powerful and, if it is permissible to say so, malicious deceiver, who is deliberately trying to trick me in every way he can? Can I now assert that I possess even the most insignificant of all the attributes which I have just said belong to the nature of a body? I scrutinize them, think about them, go over them again, but nothing suggests itself; it is tiresome and pointless to go through the list once more. But what about the attributes I assigned to the soul? Nutrition or movement? Since now I do not have a body, these are mere fabrications. Sense-perception? This surely does not occur without a body, and besides, when asleep I have appeared to perceive through the senses many things which I afterwards realized I did not perceive through the senses at all. Thinking? 
-  </div>
-
-  <div><CategoryTiles /></div>
-</div>
-)
-}
-}
-
-class CategoryTiles extends React.Component {
-
-_createLinkTag(theurl, text) {
-return(
-<div className="linkdiv"><a href={theurl}>{text}</a></div>
-)
-}
-
-_createNameInfo() {
-return(
-<div>
-  <div><h3>Kacy Hulme Wendling</h3></div>
-  <div className="linkdiv"><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing" target="_blank">Resume</a></div>
-  <div className="linkdiv"><a href="mailto:kacy.hulme@gmail.com" target="_top">Email Me</a></div>
-</div>
-)
-}
-
-_createImageDiv() {
-return ( 
-<div className="headshot">
-
-</div>
-) 
-}
-
-_renderFitnessLinks() {
-
-}
-
-_renderFoodLinks() {
-<div>
-  <div className="linkdiv"><a href="https://healthyforreal.com/">Blog</a></div>     
-  <div className="linkdiv"><a href="https://www.youtube.com/playlist?list=PLfoyjSPjZQRYyRPrhDWkSRkE6ude9ZM6H">Videos</a></div>        
-  <div className="linkdiv"><a href="https://www.instagram.com/healthyforreal/">Instagram</a></div> 
-  <div className="linkdiv"><a href="https://www.facebook.com/healthyforreal/">Facebook</a></div>   
-</div>
-}
-_renderWebDevExamples() {
-return(
-<div>
-  <div className="linkdiv"><a href="https://twitter.com/kacyhulme">Twitter</a></div>  
-  <h3>For Fun</h3> 
-  <div className="linkdiv"><a href="/samples/cssfun">Just Some CSS Fun (WIP)</a></div>  
-  <div className="linkdiv"><a href="/samples/jsfun">Just Some JS Fun (WIP)</a></div>  
-
-  <h3>Python</h3> 
-
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/scrape_this/blob/master/scrape_this/spiders/mycows.py">Python Scrapy</a></div>  
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/grocerygame/blob/master/pygame.py">Python All the Things</a></div>  
-
-  <h3>JavaScript</h3> 
-
-  <div className="linkdiv"><a href="https://shielded-ravine-94683.herokuapp.com">Live Heatmap</a></div>  
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/heatwave">Heatmap Code</a></div>  
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/javascript_graffiti">jQuery, Bootstrap, Sass, Node</a></div>  
-  <div className="linkdiv"><a href="https://floating-tundra-8531.herokuapp.com">Live HTML Canvas</a></div>  
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/farm_sanctuary">Angular</a></div>  
-
-  <h3>React</h3> 
-
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/animal-rescue">Example React App</a></div>  
-  <div className="linkdiv"><a href="https://github.com/kacyhulme/kacyhulme/blob/master/app/assets/javascripts/components/helloworld.jsx.erb">This Page is Built in React!</a></div>  
-
-  <Details detailsinfo={num}/>  
-</div>
-)   
-
-}
-
-_createCategoryHeaders(num) {
-if(num == 5) {
-return(
-<div className="categoryheader">
-  <h3>Acting</h3>
-  <div className="linkdiv"><a href="/acting" target="_blank">Reel & Headshot & Bio</a></div>
-</div>
-)
-}
-else if(num == 3) {
-return(
-<div className="categoryheader">
-  <h3>Web Development</h3>
-  <div className="linkdiv"><a href="/samples" target="_blank">Portfolio</a></div>
-  <div className="linkdiv"><a href="https://github.com/kacyhulme" target="_blank">Code</a></div>
- 
-</div>
-)
-}
-else if(num == 6) {
-return(
-<div className="categoryheader">
-  <h3>Healthy Food</h3>     
-  <div className="linkdiv"><a href="https://healthyforreal.com/" target="_blank">Blog</a></div>
-</div>
-)
-}
-else if(num == 7) {
-return(
-<div className="categoryheader">
-  <h3>Fitness</h3>
-  <p>Coming Soon!</p>
-</div>
-)
-}
-else if(num == 8) {
-return(
-<div className="categoryheader">
-  <h3>Art</h3>
-  <p>Coming Soon!</p>
-</div>
-)
-} 
-else {
-return(
-<div className="categoryheader">
-</div>
-)
-}
-}
-
-render() {
-
-var numOfDivs = 9;
-var allDivs = [];
-
-for(i=0; i< numOfDivs; i++) {
-let content = "";
-if(i == 1){
-content = this._createNameInfo();
-allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-}    
-else if(i == 4) {
-content = this._createImageDiv();
-allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-} 
-else {
-content = this._createCategoryHeaders(i);
-allDivs.push(<InnerDiv key = {i} contentinfo={content}/>);
-}
-}
-
-return (
-<div className="categorytiles">
-
-  {allDivs}
-
-</div>
-)
-}
-}
-
-class InnerDiv extends React.Component {
-render() {
-return (
-<div className="innerdiv">{this.props.contentinfo}</div>
-)
-}
+  render() {
+    return (
+      <div>
+      <div className="container-fluid">
+      <h1>Kacy Hulme Wendling</h1>
+        <div className="mainbody row">
+          <a href="http://www.venicebeach.com/"><div className="col-md-3 tiles losangeles"><div className="innerdiv"></div></div></a>
+          <a href="/samples"><div className="col-md-3 tiles"><div className="innerdiv">Web Developer</div></div></a>
+          <a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing"><div className="col-md-3 tiles kacy-img"><div className="innerdiv"></div></div></a>
+          <a href="http://www.detroitmi.gov/"><div className="col-md-3 tiles detroit"><div className="innerdiv"></div></div></a>
+          <a href="/acting"><div className="col-md-3 tiles"><div className="innerdiv">Actor</div></div></a>
+          <a href="/contact"><div className="col-md-3 tiles"><div className="innerdiv">Contact Me</div></div></a>
+          <a href="https://www.instagram.com/scarletsax"><div className="col-md-3 tiles"><div className="innerdiv">Photographer</div></div></a>  
+          <a href="https://healthyforreal.com/"><div className="col-md-3 tiles"><div className="innerdiv">Blogger</div></div></a>
+        </div>
+      </div>
+    </div>
+    )
+  }
 }

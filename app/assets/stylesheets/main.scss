@@ -1,113 +1,84 @@
 @import 'mixins';
 @import 'variables';
 
-/*react styling*/ 
 
-html, body {
-  font-family: $font-family-3;
-  background-color: #b55f63 !important;
-  color: #B08380;
+
+/*react styling*/
+
+html,
+body {
+    background-color: $background-color-light;
 }
 
 .fa {
-  font-size: 6px !important;
-  padding-right: .3em;
-  vertical-align: middle;
+    font-size: 6px !important;
+    padding-right: .3em;
+    vertical-align: middle;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:link {
-  color: #7d4e73;
+    color: #7d4e73;
 }
 
 a:visited {
-  color: #bc6972;
+    color: #bc6972;
 }
 
 a:hover {
-  color: #dc7772;
+    color: #dc7772;
 }
 
 a:active {
-  color: #bc6972;
+    color: #bc6972;
 }
 
 .mainbody {
- font-size: 18px;
- position: relative;
- opacity: .5;
- z-index: 1;
- text-align: center;
- width: auto;
+    color: black
 }
 
-.categorytiles   {
-  color: #573650; /*http://www.color-hex.com/color/7d4e73*/
-  margin-top: 4.1em;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  background: transparent;
-  width: auto;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
+.tiles {
+    border: 5px solid $background-color-light;
+    background: $antique-white;
+    height: 270px;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.tiles:hover {}
+
+h1 {
+    margin: 50px 0;
+    font-family: $font-family-3;
+    color: $background-color-dark;
 }
 
 .innerdiv {
-  font-family: $font-family-1;
-  border: 1px solid #fbf1e3; /*or maybe use #fcf3e7*/
-  height: 18em;
-  width: 27em;
-  margin: 5px;
-  text-align: center;
-  background-color: $antique-white; /*antique white*/
-  vertical-align: middle;
-  padding: 10px;
+    font-size: 34px;
+    font-family: $font-family-3;
+    color: $background-color-dark;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.innerdiv h3 {
-  font-family: $font-family-3;
-  text-transform: uppercase;
-  font-size: 1.8em;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.losangeles {
+    background-image: url('losangelesmap.jpg');
+    background-size: cover;
 }
 
-.linkdiv {
-  font-size: 1.5em;
-  line-height: 1.75em;
+.detroit {
+    background-image: url('detroit.jpg');
+    background-size: cover;
+    background-position: 33%;
 }
 
-@media only screen and (max-width: 992px) {
-  .innerdiv {
-    margin-left: 2em;
-    margin-right: 2em;
-    width: 25em;
-  }
+.kacy-img {
+    background-image: url('headshot.jpg');
+    background-size: 200%;
+    background-position: 50% 25%;
 }
-
-.innerdiv:nth-of-type(1) {
-  background-image: image-url("calimap.jpg");
-  background-position: 3% 45%;
-  background-size: 300%;
-}
-
-.innerdiv:nth-of-type(3) {
-  background-image: image-url("detroit.jpg");
-  background-position: 96% 97%;
-  background-size: 125%;
-}
- 
-.headshot {
-  background-image: image-url("headshot.jpg");
-  background-position: 50% 30%;
-  background-size: 75%;
-  background-repeat: no-repeat;
-  height: 15em;
-}
-
