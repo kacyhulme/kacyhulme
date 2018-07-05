@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
 /*react styling*/
 
 html,
@@ -81,4 +85,29 @@ h1 {
     background-image: url('headshot.jpg');
     background-size: 200%;
     background-position: 50% 25%;
+}
+
+.portfolio-slider {
+    background-color: darken($background-color-light, 10%);
+    border-radius: 9px;
+    img {
+        padding: 15px;
+        max-width: 95%;
+        max-height: 100%;
+    }
+}
+
+.url-link {
+    text-align: center;
+    a {
+        color: white;
+        font-family: $font-family-1;
+    }
+}
+
+.nav-arrow {
+    background-color: $accent-color-first;
+    font-size: 26px;
+    box-shadow: -2px 2px 14px red inset;
+    border-radius: 5px;
 }
