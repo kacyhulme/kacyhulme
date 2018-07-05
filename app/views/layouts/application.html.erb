@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Kacy Hulme</title>
-  <%= stylesheet_link_tag "application", media: 'all' %>
-  <%= csrf_meta_tags %>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  <script src="https://use.fontawesome.com/3263fc37dc.js"></script>
+    <title>Kacy Hulme</title>
+    <%= stylesheet_link_tag "application", media: 'all' %>
+        <%= csrf_meta_tags %>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:300" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
+
 <body>
+    <%= yield %>
+        <%= javascript_include_tag "application" %>
+            <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-
-  <%= yield %>
-
-
-  <%= javascript_include_tag "application" %>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-73390013-1', 'auto');
-    ga('send', 'pageview');
-    var dimensionValue = '1';
-    ga('set', 'dimension1', dimensionValue);
-
-  </script>
+            ga('create', 'UA-73390013-1', 'auto');
+            ga('send', 'pageview');
+            var dimensionValue = '1';
+            ga('set', 'dimension1', dimensionValue);
+            </script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+            <script src="https://use.fontawesome.com/3263fc37dc.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
