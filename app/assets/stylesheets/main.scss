@@ -82,18 +82,18 @@ h1 {
 }
 
 .losangeles {
-    background-image: url('losangelesmap.jpg');
+    background: image-url('losangelesmap.jpg');
     background-size: cover;
 }
 
 .detroit {
-    background-image: url('detroit.jpg');
+    background: image-url('detroit.jpg');
     background-size: cover;
     background-position: 33%;
 }
 
 .kacy-img {
-    background-image: url('headshot.jpg');
+    background: image-url('headshot.jpg');
     background-size: 200%;
     background-position: 50% 25%;
 }
