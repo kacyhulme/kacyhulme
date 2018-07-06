@@ -7,6 +7,7 @@
 
 
 
+
 /*react styling*/
 
 html,
@@ -25,19 +26,19 @@ a {
 }
 
 a:link {
-    color: #7d4e73;
+    color: $background-color-dark;
 }
 
 a:visited {
-    color: #bc6972;
+    color: $background-color-dark;
 }
 
 a:hover {
-    color: #dc7772;
+    color: $background-color-dark;
 }
 
 a:active {
-    color: #bc6972;
+    color: $background-color-dark;
 }
 
 .mainbody {
@@ -51,8 +52,18 @@ a:active {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    box-shadow: 7px 7px 7px grey;
+    box-shadow: 4px 4px 7px grey;
     border-radius: 7px;
+}
+
+.home-link:hover {
+    box-shadow: 7px 7px 7px grey;
+    width: 151px;
+    padding: 11px;
+    a {
+    text-decoration: none;
+      
+    }
 }
 
 .tiles {
@@ -68,13 +79,13 @@ a:active {
 
 h1 {
     margin: 50px 0;
-    font-family: $font-family-3;
+    font-family: $rock-salt-font-family;
     color: $background-color-dark;
 }
 
 .innerdiv {
     font-size: 34px;
-    font-family: $font-family-3;
+    font-family: $rock-salt-font-family;
     color: $background-color-dark;
     position: relative;
     top: 50%;
@@ -99,7 +110,7 @@ h1 {
 }
 
 .portfolio-slider {
-    background-color: darken($background-color-light, 10%);
+    background-color: $background-color-light;
     border-radius: 9px;
     img {
         padding: 15px;
@@ -112,13 +123,23 @@ h1 {
     text-align: center;
     a {
         color: white;
-        font-family: $font-family-1;
+        font-family: $raleway-font-family;
     }
 }
 
 .nav-arrow {
-    background-color: $accent-color-first;
-    font-size: 26px;
-    box-shadow: -2px 2px 14px red inset;
-    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+    box-shadow: 4px 4px 7px grey;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.nav-arrow:hover {
+    box-shadow: 7px 7px 7px grey;
+    width: 151px;
+    padding: 6px;
 }
