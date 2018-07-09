@@ -5,14 +5,11 @@
 
 
 
-
-
-
 /*react styling*/
 
 html,
 body {
-    background-color: $background-color-light;
+    //background-color: $background-color-light;
 }
 
 .fa {
@@ -26,19 +23,20 @@ a {
 }
 
 a:link {
-    color: $background-color-dark;
+    color: $dark-grey;
 }
 
 a:visited {
-    color: $background-color-dark;
+    color: $dark-grey;
+    text-decoration: none;
 }
 
 a:hover {
-    color: $background-color-dark;
+    color: $hot-pink;
 }
 
 a:active {
-    color: $background-color-dark;
+    color: $dark-grey;
 }
 
 .mainbody {
@@ -46,29 +44,19 @@ a:active {
 }
 
 .home-link {
-    margin-top: 20px;
-    background-color: white;
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    box-shadow: 4px 4px 7px grey;
-    border-radius: 7px;
+    font-size: 24px;
+    margin-top: 50px;
 }
 
 .home-link:hover {
-    box-shadow: 7px 7px 7px grey;
-    width: 151px;
-    padding: 11px;
     a {
-    text-decoration: none;
-      
+        text-decoration: none;
     }
 }
 
 .tiles {
-    border: 5px solid $background-color-light;
-    background: $antique-white;
+    border: 5px solid $dark-brown;
+    background: $light-tan;
     height: 270px;
     text-align: center;
     border-radius: 16px;
@@ -79,14 +67,14 @@ a:active {
 
 h1 {
     margin: 50px 0;
-    font-family: $rock-salt-font-family;
-    color: $background-color-dark;
+    font-family: $east-sea-font;
+    color: $dark-grey;
 }
 
 .innerdiv {
     font-size: 34px;
-    font-family: $rock-salt-font-family;
-    color: $background-color-dark;
+    font-family: $east-sea-font;
+    color: $dark-grey;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -110,12 +98,13 @@ h1 {
 }
 
 .portfolio-slider {
-    background-color: $background-color-light;
+    //background-color: $light-grey;
     border-radius: 9px;
     img {
         padding: 15px;
         max-width: 95%;
         max-height: 100%;
+        border: 1px solid $dark-grey;
     }
 }
 
@@ -123,23 +112,69 @@ h1 {
     text-align: center;
     a {
         color: white;
-        font-family: $raleway-font-family;
+        font-family: $open-sans-conds-font;
     }
 }
 
 .nav-arrow {
     background-color: white;
-    width: 150px;
+    width: 45px;
     text-align: center;
     padding: 5px;
     font-size: 24px;
     box-shadow: 4px 4px 7px grey;
-    border-radius: 7px;
+    border-radius: 25px;
     margin-bottom: 30px;
 }
 
 .nav-arrow:hover {
     box-shadow: 7px 7px 7px grey;
-    width: 151px;
+    
     padding: 6px;
+}
+
+
+
+/// try  
+.left {
+    h1 {
+        padding: 0 50px;
+        color: $dark-yellow;
+        background: url('marfapic1.JPG') no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $east-sea-font;
+        font-size: 200px;
+        word-wrap: break-word;
+        text-transform: uppercase;
+        background-size: cover;
+        background-position: 79% 20%;
+        line-height: .8;
+    }
+}
+
+.right {
+    padding: 80px 50px;
+    font-family: $open-sans-conds-font;
+    font-size: 58px;
+    word-wrap: break-word;
+    color: $dark-grey;
+    span {
+        margin-right: 15px;
+        color: $turqoise;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+#acting,
+#contact-me, #samples {
+    font-family: $open-sans-conds-font;
+    font-size: 50px;
+    h1 {
+      font-family: $open-sans-conds-font;
+      font-size: 50px;
+    }
+
 }

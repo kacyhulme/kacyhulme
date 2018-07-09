@@ -1,22 +1,17 @@
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-      <div className="container-fluid">
-      <h1>Kacy Hulme Wendling</h1>
-        <div className="mainbody row">
-          <a href="http://www.venicebeach.com/"><div className="col-md-3 tiles losangeles"><div className="innerdiv"></div></div></a>
-          <a href="/samples"><div className="col-md-3 tiles"><div className="innerdiv">Web Developer</div></div></a>
-          <a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit?usp=sharing"><div className="col-md-3 tiles kacy-img"><div className="innerdiv"></div></div></a>
-          <a href="http://www.detroitmi.gov/"><div className="col-md-3 tiles detroit"><div className="innerdiv"></div></div></a>
-          <a href="/acting"><div className="col-md-3 tiles"><div className="innerdiv">Actor</div></div></a>
-          <a href="/contact"><div className="col-md-3 tiles"><div className="innerdiv">Contact Me</div></div></a>
-          <a href="https://www.instagram.com/scarletsax"><div className="col-md-3 tiles">
-          <div className="innerdiv"><div>Photo-</div><div>grapher</div></div></div></a>  
-          <a href="https://healthyforreal.com/"><div className="col-md-3 tiles"><div className="innerdiv">Blogger</div></div></a>
+class App extends React.Component { render() { return (
+<div>
+    <div className="container-fluid">
+        <div className="col-md-6 left">
+            <h1>Kacy Hulme Wendling</h1>
         </div>
-      </div>
+        <div className="col-md-6 right">
+            <p><span>|</span><a href="/samples">Web Developer</a></p>
+            <p><span>|</span><a href="https://www.instagram.com/scarletsax">Photographer</a></p>
+            <p><span>|</span><a href="/acting">Actor</a></p>
+            <p><span>|</span><a href="https://healthyforreal.com/">Blogger</a></p>
+            <p><span>|</span><a href="https://docs.google.com/document/d/1vU5q5Xz4lQ2-Ur5nVv9ZbhrVtiD861waXpq1z2dOEpo/edit">Resume</a></p>
+            <p><span>|</span><a href="/contact">Contact Me</a></p>
+        </div>
     </div>
-    )
-  }
-}
+</div>
+) } }
