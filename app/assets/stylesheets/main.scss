@@ -5,6 +5,8 @@
 
 
 
+
+
 /*react styling*/
 
 html,
@@ -129,52 +131,71 @@ h1 {
 
 .nav-arrow:hover {
     box-shadow: 7px 7px 7px grey;
-    
+
     padding: 6px;
 }
 
 
 
 /// try  
-.left {
-    h1 {
-        padding: 0 50px;
-        color: $dark-yellow;
-        background: image-url('marfapic1.JPG') no-repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: $east-sea-font;
-        font-size: 200px;
-        word-wrap: break-word;
-        text-transform: uppercase;
-        background-size: cover;
-        background-position: 79% 20%;
-        line-height: .8;
+.home {
+    .left {
+        h1 {
+            padding: 0 50px;
+            color: $dark-yellow;
+            background: image-url('marfapic1.JPG') no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: $east-sea-font;
+            font-size: 200px;
+            word-wrap: break-word;
+            text-transform: uppercase;
+            background-size: cover;
+            background-position: 79% 20%;
+            line-height: .8;
+        }
     }
-}
 
-.right {
-    padding: 80px 50px;
-    font-family: $open-sans-conds-font;
-    font-size: 58px;
-    word-wrap: break-word;
-    color: $dark-grey;
-    span {
-        margin-right: 15px;
-        color: $turqoise;
-    }
-    a:hover {
-        text-decoration: none;
+    .right {
+        padding: 80px 50px;
+        font-family: $open-sans-conds-font;
+        font-size: 58px;
+        word-wrap: break-word;
+        color: $dark-grey;
+        span {
+            margin-right: 15px;
+            color: $turqoise;
+        }
+        a:hover {
+            text-decoration: none;
+        }
     }
 }
 
 #acting,
-#contact-me, #samples {
+#contact-me,
+#samples {
     font-family: $open-sans-conds-font;
     font-size: 50px;
     h1 {
-      font-family: $open-sans-conds-font;
-      font-size: 50px;
+        font-family: $open-sans-conds-font;
+        font-size: 50px;
     }
+}
 
+@media only screen and (max-width: 600px) {
+    .home {
+        .left {
+            h1 {
+          padding: 0 25px;
+                font-size: 120px;
+            }
+        }
+    }
+    .home {
+        .right {
+            padding-top: 0;
+            font-size: 40px;
+        }
+    }
 }
