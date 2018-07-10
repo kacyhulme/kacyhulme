@@ -7,6 +7,7 @@
 
 
 
+
 /*react styling*/
 
 html,
@@ -110,6 +111,14 @@ h1 {
     }
 }
 
+.slick-next {
+  margin-left: 50px;
+}
+
+.slick-prev {
+  margin-right: 70px;
+}
+
 .url-link {
     text-align: center;
     a {
@@ -183,11 +192,12 @@ h1 {
     }
 }
 
+
 @media only screen and (max-width: 600px) {
     .home {
         .left {
             h1 {
-          padding: 0 25px;
+                padding: 0 25px;
                 font-size: 120px;
             }
         }
