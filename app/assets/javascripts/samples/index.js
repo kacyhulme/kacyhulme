@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.portfolio-slider').slick({
         infinite: true,
         accessibility: true,
-        arrows: true,
+        arrows: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
