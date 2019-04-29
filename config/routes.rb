@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   get "samples/cssfun" => "samples#cssfun"
   get "samples/jsfun" => "samples#jsfun"
+  get "samples/dthree" => "samples#dthree"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
